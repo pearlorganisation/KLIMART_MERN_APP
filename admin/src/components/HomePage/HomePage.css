@@ -1,0 +1,19 @@
+.readmore {
+    color:#fe5502
+}
+img{
+    width: 100%; /* Make the image fill the container horizontally */
+    height: 100%; /* Make the image fill the container vertically */
+    object-fit: contain;
+    /* object-position: 0 0; */
+}
+
+.home_card .card{
+    width: 70rem;
+}
+
+@media screen and  (max-width:600px) {
+    .home_card .card{
+        width: 100%;
+    }
+}

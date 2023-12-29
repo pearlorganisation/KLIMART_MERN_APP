@@ -1,0 +1,448 @@
+.reg_label_err {
+  font-size: 12.7px;
+  color: #d92612;
+  padding: 2px 5px 0px;
+}
+
+#contacthero {
+  background-color: black;
+}
+
+#contactheroimg {
+  width: 100%;
+  opacity: 0.9;
+  object-fit: cover;
+  height: auto;
+}
+
+#contactlocation {
+  background-image: url(../assets/contactmap.png) !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25.25rem;
+  padding-left: 1.5rem;
+  display: flex;
+}
+
+#contactmap {
+  float: left;
+  background: transparent;
+  width: 58%;
+  height: 100%;
+}
+#contactmap a {
+  background: transparent;
+}
+
+#mapsicon {
+  background: transparent;
+  margin: 19% 0 0 47%;
+  transition: all 0.3s;
+}
+
+#mapsicon:hover {
+  transform: scale(1.1);
+}
+#contactaddress {
+  float: left;
+  background-color: transparent;
+  width: 42%;
+  height: 100%;
+}
+
+#contacttoptext {
+  font-size: 75%;
+  text-transform: uppercase;
+  font-weight: 300;
+  background: transparent;
+  margin: 4.75rem 0;
+}
+
+#hqaddress {
+  padding-left: 1.5rem;
+  border-left: #e82127 solid 0.5rem;
+  background: transparent;
+}
+
+#contactaddress h3 {
+  background-color: transparent;
+  font-size: 150%;
+  letter-spacing: 3px;
+  width: 100%;
+  height: 50%;
+}
+
+#contactaddress p {
+  background-color: transparent;
+  width: 50%;
+  margin-top: 1.25rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+#officelocations {
+  padding: 0 9%;
+  margin-bottom: 9%;
+}
+
+.addresscard {
+  margin-top: 6rem;
+}
+
+.addresscard h4 {
+  font-size: 133%;
+  height: 5.8rem;
+  letter-spacing: 3px;
+  width: 90%;
+  padding-top: 1.5rem;
+  border-top: black solid 4px;
+}
+
+.addresscard p {
+  font-weight: 300;
+  margin-top: 1.875rem;
+  letter-spacing: 1px;
+  width: 95%;
+  line-height: 150%;
+}
+
+#careersbutton {
+  padding: 0 9%;
+  height: 18.75rem;
+}
+
+#careersbuttonleft {
+  background-color: #f5f5f5;
+  float: left;
+  width: 80%;
+  height: 14rem;
+}
+
+#careersbutton h3 {
+  width: 92%;
+  padding: 7%;
+  font-size: 2rem;
+  padding-bottom: 0;
+  height: 50%;
+  background-color: transparent;
+  line-height: 150%;
+  letter-spacing: 3px;
+}
+#careersbutton h3 span {
+  font-size: inherit;
+  background: inherit;
+  border-bottom: black solid 3px;
+  transition: all 0.3s;
+}
+
+#careersbutton h3 span:hover {
+  font-size: larger;
+}
+
+#careersbuttonright {
+  background-color: #d9d9d9;
+  float: left;
+  width: 20%;
+  height: 14rem;
+  transition: all 0.2s ease;
+}
+
+#careersbuttonright:hover {
+  background-color: #e82127;
+}
+#careersbuttonright svg {
+  background-color: transparent;
+  font-size: 250%;
+  padding-top: 37%;
+  padding-left: 40%;
+  transition: 0.3s;
+  stroke: white;
+  fill: white;
+}
+#careersbuttonright:hover svg {
+  padding-top: 35%;
+  padding-left: 38%;
+  font-size: 300%;
+  stroke: white;
+  fill: white;
+}
+
+a {
+  font-size: inherit;
+  background: inherit;
+}
+#contactform {
+  margin-left: 10%;
+}
+
+#contactform {
+  height: 56.25rem;
+}
+
+#contactform h4 {
+  font-size: 133%;
+  height: 5.8rem;
+  letter-spacing: 3px;
+  width: 90%;
+  padding-top: 1.5rem;
+  border-top: black solid 4px;
+}
+
+.contactleft {
+  float: left;
+}
+
+.contactright {
+  float: right;
+  margin-right: 20%;
+}
+
+.contactleft input {
+  width: 28.125rem;
+  height: 3.4375rem;
+  padding-left: 2.375rem;
+  border: none;
+  background-color: #f5f5f5;
+}
+
+.contactleft label {
+  font-weight: 400;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+}
+
+.contactright input {
+  width: 28.125rem;
+  height: 3.4375rem;
+  padding-left: 2.375rem;
+  border: none;
+  background-color: #f5f5f5;
+}
+
+.contactright label {
+  font-weight: 400;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+}
+
+#contactmessage {
+  float: left;
+  margin-top: 2%;
+}
+
+#contactmessage input {
+  width: 64.875rem;
+  height: 12.625rem;
+  padding-left: 2.375rem;
+  border: none;
+  background-color: #f5f5f5;
+}
+#contactmessage label {
+  font-weight: 400;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+}
+
+#contactsubmitbtn {
+  text-transform: uppercase;
+  padding-top: auto;
+  padding-bottom: auto;
+  width: 12.5rem;
+  float: left;
+  margin: 2% 20% 0 0;
+}
+
+.contactaddressmobile {
+  height: 200px;
+  width: 95%;
+  margin: 0 2.5%;
+  margin-bottom: 12%;
+  display: none;
+}
+
+.addresscardmobile {
+  margin-top: 6rem;
+  padding-left: 17px;
+  border-left: #e82127 solid 8px;
+}
+
+.addresscardmobile h4 {
+  font-size: 20px;
+  height: 5.8rem;
+  letter-spacing: 3px;
+  width: 90%;
+  padding-top: 1.5rem;
+}
+
+.addresscardmobile p {
+  font-size: 16px;
+  font-weight: 300;
+  margin-top: 1.875rem;
+  letter-spacing: 1px;
+  width: 95%;
+  line-height: 150%;
+}
+
+#careersbuttonleft svg {
+  background-color: transparent;
+  font-size: 250%;
+  transition: 0.3s;
+  stroke: black;
+  fill: black;
+  display: none;
+}
+@media only screen and (max-width: 767px) {
+  #contactheroimg {
+    height: 40vh;
+    margin-top: 17%;
+  }
+  #contactlocation {
+    background-image: url(../assets/contactmapmobile.png) !important;
+    width: 95%;
+    margin: 0 2.5%;
+    padding-left: 0;
+    height: 203px;
+  }
+
+  #contactmap {
+    width: 100%;
+  }
+
+  #contactaddress {
+    display: none;
+  }
+
+  .contactaddressmobile {
+    display: inline-block;
+  }
+
+  #mapsicon {
+    background: transparent;
+    width: 15%;
+    margin: 20% 40%;
+  }
+
+  .addresscard h4 {
+    font-size: 18px;
+  }
+
+  .addresscard p {
+    font-size: 12px;
+    margin-top: 8rem ;
+  }
+
+  #careersbutton {
+    margin-bottom: 5%;
+  }
+  #careersbutton h3 {
+    font-size: 25px;
+    height: 50%;
+    line-height: 175%;
+    letter-spacing: 0px;
+    padding: 10%;
+    width: auto;
+  }
+  #careersbuttonleft {
+    height: auto;
+    width: 100%;
+    padding-bottom: 3%;
+    margin-bottom: 10%;
+  }
+
+  #careersbuttonleft svg {
+    background-color: transparent;
+    font-size: 125%;
+    padding-left: 10%;
+    padding-top: 2%;
+
+    display: inline-block;
+  }
+
+  #careersbuttonright {
+    display: none;
+  }
+
+  #contactform {
+    height: auto;
+  }
+  #contactform h4 {
+    font-size: 20px;
+    height: auto;
+    letter-spacing: 3px;
+    width: 90%;
+    padding-top: 32px;
+    border: none;
+    margin-bottom: 5%;
+  }
+  .contactleft,
+  #contactmessage {
+    float: none;
+  }
+  .contactright {
+    float: none;
+    margin-right: 0;
+  }
+
+  .contactleft,
+  .contactright {
+    margin-bottom: 5%;
+  }
+  .contactleft label,
+  .contactright label,
+  #contactmessage label {
+    font-size: 12px;
+  }
+  .contactleft input,
+  .contactright input {
+    width: 90%;
+    height: 55px;
+  }
+  #contactmessage input {
+    width: 90%;
+    height: 200px;
+  }
+  .contactleft input::placeholder,
+  .contactright input::placeholder,
+  #contactmessage input::placeholder {
+    font-size: 12px;
+  }
+  #contactsubmitbtn {
+    font-size: 14px;
+    height: 48px;
+    margin-left: 50%;
+    margin-top: 9%;
+    margin-bottom: 9%;
+    text-transform: uppercase;
+    width: 172px;
+    transform: translateX(-50%);
+  }
+
+  /* 23.05.23 */
+  .addresscardmobile {
+    width: 95%;
+  }
+  #officelocations,
+  #careersbutton {
+    padding: 0 2.5%;
+    margin-top:30px;
+
+  }
+  #contactform {
+    margin-left: 2.5%;
+  }
+
+  .contact_home {
+    overflow: hidden;
+  }
+}
+
+@media (max-width:995px) {
+  #contactmap{
+    width:90%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .addresscard p {
+    margin-top: 1.875rem;
+  }
+}

@@ -1,0 +1,582 @@
+#popup {
+  align-items: center;
+  -webkit-backdrop-filter: blur(0);
+  backdrop-filter: blur(0);
+  background-color: initial;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  transition: all 0.3s;
+  width: 100%;
+  z-index: 1100000;
+}
+
+.popUp_selected {
+  backdrop-filter: blur(10px) !important;
+  opacity: 1 !important;
+  position: relative;
+  pointer-events: auto !important;
+}
+
+.popup_container {
+  background-color: white;
+  /* width: 80%; */
+  width: 65%;
+}
+
+.popup_heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: auto;
+  padding: 2rem 0;
+}
+
+.popUpbtnHover {
+  transition: color 100ms ease;
+}
+.variable_component_content .popUpbtnHover:hover {
+  background-color: #e82127;
+  border-color: transparent;
+  color: white !important;
+}
+.popUpbtnHover .outline_btn_text:hover {
+  color: white;
+}
+
+.popup_backbtn {
+  margin: 0 1rem;
+  padding: 3rem;
+}
+
+.popup_heading > div {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-right: 3rem;
+}
+
+.popup_heading > div:first-child {
+  font-size: 2rem;
+  font-weight: 800;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 0.5rem;
+}
+
+.popup_heading > div:last-child > svg {
+  width: 2rem;
+  height: 3rem;
+}
+
+/* progress bar css  */
+.progress_container {
+  display: flex;
+}
+
+.progress_container * {
+  background-color: transparent;
+}
+
+.progress_bar {
+  background: black;
+  width: 10%;
+  height: 45vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  float: left;
+}
+
+.progress_bar.center {
+  justify-content: center;
+}
+
+.progress_status {
+  display: flex;
+  justify-content: center;
+  background-color: transparent;
+  color: white;
+  height: 15%;
+}
+
+.progress_dot_container {
+  margin: 10% 0;
+  background-color: #707070;
+  width: 8px;
+  height: 70%;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.progress_dot_bar {
+  border-radius: 12px;
+  background-color: white;
+  width: 100%;
+  height: 10%;
+  transition: height 1s ease;
+}
+
+.progress_dot {
+  width: 0.4rem;
+  height: 0.4rem;
+  background-color: white;
+  border-radius: 100%;
+}
+
+.progress_container {
+  /* border-top: 2px solid black; */
+}
+
+.variable_component {
+  width: 100%;
+  height: 45vh;
+  display: flex;
+  justify-content: center;
+}
+
+.variable_component_content {
+  width: 60%;
+  padding: 2rem 2rem;
+}
+
+.variable_component_content_btn {
+  background: #e82127;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+  margin-top: 3rem;
+  padding: 0.4rem;
+  cursor: pointer;
+}
+
+.variable_component_content_btn > div:first-child {
+  background: #e82127;
+  color: white;
+  font-weight: 900;
+  letter-spacing: 0.2rem;
+}
+
+.variable_component_content_btn > div:last-child {
+  background: #e82127;
+}
+
+.variable_component_content_btn > div:last-child > img {
+  background: #e82127;
+}
+
+/* btn css  */
+
+.all_btn_var_comp {
+  margin-top: 0;
+}
+
+.all_btn_input .input_container {
+  flex-direction: row;
+}
+
+.all_btn_input > div:first-child {
+  margin-bottom: 0.7rem;
+}
+
+/* #595959 */
+
+.input_container .variable_component_content_btn {
+  background-color: #595959;
+  margin-top: 0;
+  padding: 0.9rem;
+}
+
+.all_btn_input .input_container > input {
+  padding: 1.3rem;
+  padding-left: 1rem;
+}
+
+.input_container .variable_component_content_btn div {
+  background-color: #595959;
+}
+
+.input_container input::placeholder {
+  font-size: 10px;
+}
+
+.outline_wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  /* width: 55%; */
+  width: 60%;
+  margin-top: 3rem;
+  padding-left: 1rem;
+  border: 2px solid black;
+  background: transparent;
+  transition: all 0.5s;
+}
+
+.outline_btn_text {
+  background: transparent;
+  font-weight: 900;
+  letter-spacing: 0.2rem;
+  /* padding: 1.3rem; */
+  padding: 1.1rem;
+  transition: all 0.5s;
+}
+
+.outline_wrapper.selected {
+  background: #e82127;
+  letter-spacing: 0.2rem;
+  border-color: transparent;
+}
+
+.outline_wrapper.selected .outline_btn_text {
+  color: white;
+}
+
+.orange_wrapper {
+  background: #e82127;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border: none;
+  width: 55%;
+  margin-top: 3rem;
+  padding-left: 1rem;
+}
+
+.orange_btn_text {
+  background: transparent;
+  color: white;
+  font-weight: 900;
+  letter-spacing: 0.2rem;
+  padding: 1.3rem;
+}
+
+/* ALL BUTTONS CSS  */
+
+#popup .all_btn_var_comp {
+  width: 70%;
+}
+
+.all_btns {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 4rem 4rem;
+  align-items: end;
+}
+
+.all_text {
+  padding: 1rem;
+}
+
+.all_btns_btn {
+  padding-left: 0;
+  padding-right: 4.5rem;
+}
+
+.all_btns {
+  margin-bottom: 1rem;
+}
+
+.all_btn_var_comp {
+  margin-top: 0;
+}
+
+.all_btn_input .input_container {
+  flex-direction: row;
+}
+
+.all_btn_input > div:first-child {
+  margin-bottom: 0.7rem;
+}
+
+/* #595959 */
+
+.input_container .variable_component_content_btn {
+  background-color: #595959;
+  margin-top: 0;
+  padding: 0.9rem;
+}
+
+.all_btn_input .input_container > input {
+  padding: 1.3rem;
+  padding-left: 1rem;
+}
+
+.input_container .variable_component_content_btn div {
+  background-color: #595959;
+}
+
+/* Thank Page css  */
+
+#Thank {
+  position: relative;
+  width: 60vw;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 4px solid #e82127;
+}
+
+.thank_cross {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+}
+
+.ThanksImg {
+  position: relative;
+}
+
+.ThanksImg > img:first-child {
+  width: 20vw;
+  height: 50.6vh;
+  display: flex;
+  justify-content: center;
+  object-fit: cover;
+  filter: brightness(0.7);
+}
+
+.ThanksImg > img:last-child {
+  width: 10rem;
+  height: 10rem;
+  background: transparent;
+  position: absolute;
+  left: 5vw;
+  top: 15vh;
+}
+
+.thank_content {
+  padding: 0 3rem;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* border-bottom: 4px solid red; */
+}
+
+.tankHeading {
+  font-size: 2.4rem;
+  font-weight: bold;
+  letter-spacing: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.thank_para {
+  letter-spacing: 0.2rem;
+  font-size: 0.7rem;
+}
+
+/* input forms */
+.input_form_container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.inputs_wrapper {
+  display: grid;
+  grid-template-columns: 1.3fr 1.3fr 1fr;
+  margin-left: 16%;
+  gap: 1.8rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.input_container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  /* gap: 0.7rem; */
+  position: relative;
+}
+
+.input_container:nth-child(3) {
+  grid-column: 1 / 2;
+}
+
+.input_container input {
+  background-color: #f5f5f5;
+  padding: 1rem 0.4rem;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 0 10px;
+}
+
+.input_container .input_label {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: regular;
+  margin: 0 10px;
+}
+.budget-div {
+  width: 93%;
+  position: relative;
+}
+.static-value {
+  position: absolute;
+  top: 11px;
+  left: 10px;
+  font-weight: 400;
+  font-size: 16px;
+  color: black;
+  z-index: 20000;
+}
+
+#budgetinput {
+  padding-left: 1.3rem;
+}
+
+.form_button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+  font-size: 0.9rem;
+  font-weight: bold;
+  letter-spacing: 4px;
+  box-sizing: border-box;
+  border: none;
+  background-color: #595959;
+  color: white;
+  padding: 1rem 1rem;
+  padding-left: 2rem;
+}
+
+@media only screen and (max-width: 767px) {
+  /* 
+  .popup_heading {
+    width: 392px;
+    margin: 0;
+    display: inline-block;
+  }
+  .popup_heading div {
+    margin: 0;
+  }
+  .popup_container {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+  }
+  .progress_bar,
+  .center {
+    background: black;
+    width: 20%;
+    height: 360px;
+    margin-left: 174px;
+    transform: rotate(-90deg);
+    flex-direction: unset;
+    margin: 0 !important;
+  }
+  .progress_status {
+    transform: rotate(90deg);
+  }
+  .variable_component {
+    width: 100%;
+    height: 45vh;
+    padding-top: 0;
+    display: inline-block;
+    justify-content: center;
+    margin-left: 0;
+  }*/
+
+  .popup_container {
+    width: 100%;
+    height: 80%;
+  }
+  .variable_component_content {
+    width: 70%;
+  }
+  .variable_component_content div {
+    font-size: 12px;
+  }
+  .variable_component_content_btn {
+    font-size: 8px !important;
+    padding: 1rem;
+  }
+  .outline_wrapper {
+    width: 80%;
+  }
+  .outline_btn_text {
+    font-size: 12px !important;
+  }
+
+  .all_btns_btn {
+    padding-right: 1rem;
+  }
+  .all_btns_btn div {
+    font-size: 8px !important;
+  }
+  .input_container .variable_component_content_btn div {
+    font-size: 8px;
+  }
+
+  /* .static-value {
+    left: 26%;
+    font-weight: 400;
+    font-size: 10px;
+    top: 46.5%;
+  } */
+  .input_container .input_label {
+    font-size: 10px;
+  }
+  .inputs_wrapper {
+    display: inline-block;
+  }
+  .input_container {
+    padding-bottom: 5%;
+  }
+  .input_container input {
+    width: 70%;
+    font-size: 10px;
+  }
+
+  #budgetinput {
+    padding-left: 5%;
+  }
+
+  .form_button {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 10px;
+  }
+  #Thank {
+    width: 90vw;
+    display: inline;
+  }
+  .ThanksImg {
+    width: 20vw;
+    float: left;
+  }
+  .thank_content {
+    width: 50vw;
+    border: none;
+  }
+  .thank_para {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .static-value {
+    top: 20px;
+    left: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .static-value {
+    top: 5px;
+    left: 8px;
+    font-weight: 400;
+    font-size: 13px;
+  }
+}

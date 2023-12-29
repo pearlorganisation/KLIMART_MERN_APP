@@ -1,0 +1,20 @@
+img{
+    width: 100%; /* Make the image fill the container horizontally */
+    height: 100%; /* Make the image fill the container vertically */
+    object-fit: contain;
+    /* object-position: 0 0; */
+}
+.readmore{
+    color: rgb(254,85,2);
+}
+
+
+.career_card .card{
+    width: 70rem;
+}
+
+@media screen and  (max-width:600px) {
+    .career_card .card{
+        width: 100%;
+    }
+}

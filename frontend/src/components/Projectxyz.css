@@ -1,0 +1,385 @@
+.projectheroimg {
+  background-repeat: no-repeat;
+  object-fit: contain;
+  width: 100%;
+  height: 41.875rem;
+  background-size: cover;
+}
+
+#projanunani {
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.51) 0%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    url("../assets/anunanihero.png");
+}
+
+#projbiome {
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.51) 0%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    url("../assets/biomehero.png");
+}
+
+#projepco {
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.51) 0%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    url("../assets/epcohero.png");
+}
+
+#projepco2 {
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.51) 0%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    url("../assets/epcohero2.png");
+}
+
+#projhabitat {
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.51) 0%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    url("../assets/habitathero.png");
+}
+
+#projhpcl {
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.51) 0%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    url("../assets/hpclhero.png");
+}
+
+#projmicro {
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.51) 0%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    url("../assets/microhero.png");
+}
+
+#projpgcil {
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.51) 0%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    url("../assets/pgcilhero.png");
+}
+
+.heronavproj {
+  background: transparent;
+  color: white;
+  font-size: 75%;
+  padding-left: 10%;
+  padding-top: 10%;
+}
+
+.projectheading {
+  background: transparent;
+  padding-left: 10%;
+  padding-top: 23%;
+}
+
+.projecttype {
+  font-size: 75%;
+  font-weight: 400;
+  letter-spacing: 3px;
+  background: transparent;
+  padding-bottom: 1%;
+  color: white;
+}
+
+.projecttype img {
+  height: 1px;
+  width: 14rem;
+  margin-left: 51px;
+  padding-bottom: 4px;
+  padding-top: 12px;
+  background-color: inherit;
+  background: transparent;
+}
+
+.projectname {
+  font-size: 200%;
+  color: white;
+  background: transparent;
+  font-weight: 700;
+  letter-spacing: 10px;
+}
+
+.projectdetails {
+  height: 172px;
+  padding: 72px 0px 0 10%;
+  width: 90%;
+  margin-bottom: 0.7rem;
+  background-color: inherit;
+}
+
+.projecttoptext {
+  font-size: 150%;
+  font-weight: 600;
+  letter-spacing: 3px;
+}
+
+.projecttoptext img {
+  height: 2px;
+  width: 120px;
+  margin-left: 51px;
+  padding-bottom: 4px;
+  padding-top: 12px;
+  background-color: inherit;
+}
+
+.projectdetailstext {
+  margin-top: 40px;
+  float: left;
+  width: 33%;
+}
+
+.projectdetailstext p {
+  font-size: 100%;
+  line-height: 24px;
+  letter-spacing: 1px;
+}
+
+.right {
+  float: right;
+  margin-right: 260px;
+  width: 36%;
+}
+
+/******* Projectxyz image and text ********/
+
+.projectimg {
+  margin: 3.125rem 16.25rem 0 16.25rem;
+  width: 57.5rem;
+}
+
+.projtext {
+  font-weight: 300;
+  margin: 8% 25%;
+  letter-spacing: 1px;
+  line-height: 150%;
+}
+
+#text2 {
+  margin-right: 354px;
+}
+
+/******* Projectxyz concept ********/
+
+#concept {
+  height: 51rem;
+}
+
+#concepttoptext {
+  padding: 72px 0px 0 10%;
+  width: 90%;
+  background-color: inherit;
+}
+
+.cimg {
+  margin-top: 120px;
+  margin-left: 142px;
+  float: left;
+}
+
+.cimg img {
+  width: 30rem;
+  height: auto;
+}
+
+.concepttext {
+  width: 28rem;
+  height: 11.875rem;
+  float: right;
+  margin-right: 10%;
+  margin-top: 5rem;
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 125%;
+}
+
+/* galary css  */
+.galary_wrapper {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  width: 100vw;
+  height: 76vh;
+}
+
+.big_img {
+  width: 75vw;
+  display: flex;
+  justify-content: center;
+  background: black;
+  height: 60vh;
+}
+
+.big_img > img {
+  width: 70%;
+  height: 100%;
+  margin: 1rem 5rem;
+  background: black;
+}
+.scroll_img {
+  width: 20vw;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  background-color: black;
+}
+
+.scroll_img > img {
+  width: 17vw;
+  height: 10vw;
+  margin-top: 1rem;
+  transition: all 0.5s ease;
+  object-fit: cover;
+}
+.scroll_img::-webkit-scrollbar {
+  width: 1rem;
+}
+
+.scroll_img::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.scroll_img::-webkit-scrollbar-thumb {
+  background-color: white;
+  border: 5px solid black;
+}
+
+.galary_img_selected {
+  transform: scale(0.8);
+}
+
+#anunani {
+  background-image: url("../assets/anunanihero.png") !important;
+}
+
+@media only screen and (max-width: 767px) {
+  .heronavproj {
+    font-size: 12px;
+    padding-left: 5%;
+    letter-spacing: 1px;
+  }
+  .projecttype {
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+  .projectname {
+    font-size: 25px;
+  }
+  .projectheading {
+    padding-top: 30%;
+    padding-left: 5%;
+  }
+  .projecttoptext {
+    font-size: 20px;
+  }
+
+  .projecttoptext img {
+    width: 30%;
+    margin-left: 5%;
+  }
+  .projectdetailstext {
+    margin-top: 40px;
+    float: none;
+    display: inline-block;
+    width: 90%;
+  }
+  .projectdetailstext p {
+    font-size: 12px;
+  }
+  .projectdetailstext p strong {
+    font-size: 12px;
+  }
+  .projectdetails {
+    height: auto;
+  }
+  .projectimg {
+    margin: 5%;
+    width: 90%;
+  }
+  .projtext {
+    margin: 8% 10%;
+  }
+  .projtext p {
+    font-size: 16px;
+    line-height: 150%;
+  }
+  #text2 {
+    margin-right: 10%;
+  }
+
+  .right {
+    margin-right: 0;
+  }
+
+  #concept {
+    height: auto;
+  }
+  .cimg {
+    margin: 5%;
+    float: none;
+  }
+  .cimg img {
+    width: 100%;
+  }
+  .concepttext {
+    width: 90%;
+    height: auto;
+    float: none;
+    margin: 5%;
+    font-weight: 300;
+    margin-bottom: 10vh;
+  }
+  .concepttext p {
+    font-size: 16px;
+    line-height: 150% !important;
+  }
+  .concepttext p strong {
+    font-size: 16px;
+  }
+  #galary {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .projectheading {
+    padding-top: 40%;
+    /* padding-left: 5%; */
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .projectdetailstext {
+    margin-top: 4px;
+    float: none;
+    width: 62.5%;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .projectdetailstext p {
+    /* font-size: 100%; */
+    line-height: 50px;
+    /* letter-spacing: 1px; */
+  }
+}
