@@ -82,11 +82,15 @@ const projectSchema = new schema({
   startingDate : {
     type : Date,
     // default : Date.now()
+    default : ""
+
 
   },
   completionDate : {
     type : Date,
     // default : Date.now()
+    default : ""
+
   }
 });
 

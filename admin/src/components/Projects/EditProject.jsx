@@ -118,6 +118,7 @@ const EditProject = (props) => {
   }, [tagsdata, editabledata]);
 
   const onSubmit = async (data) => {
+    console.log("data ***(*)" , data)
     setLoading(true);
 
     const { city, state, country } = data;
@@ -928,9 +929,9 @@ const EditProject = (props) => {
               class="form-control"
               type="date"
               id="exampleFormControlTextarea1"
-              defaultValue={new Date(editabledata?.startingDate)
+              defaultValue={editabledata?.startingDate===null ?  "mm/dd/yyyy" : (new Date(editabledata?.startingDate)
                 ?.toJSON()
-                ?.slice(0, 10)}
+                ?.slice(0, 10))}
               rows="3"
               name="startingDate"
               {...register("startingDate", {
@@ -954,9 +955,9 @@ const EditProject = (props) => {
               class="form-control"
               type="date"
               id="exampleFormControlTextarea1"
-              defaultValue={new Date(editabledata?.completionDate)
+              defaultValue={editabledata?.completionDate===null ? "mm/dd/yyyy" : (new Date(editabledata?.completionDate)
                 ?.toJSON()
-                ?.slice(0, 10)}
+                ?.slice(0, 10))}
               rows="3"
               name="completionDate"
               {...register("completionDate", {
