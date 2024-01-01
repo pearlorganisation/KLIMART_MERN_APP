@@ -1,0 +1,580 @@
+.header {
+  /* height: 3.2rem; */
+  display: flex;
+  align-items: right;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  text-transform: uppercase;
+  width: 100%;
+  padding-left: 10%;
+  padding-top: 1.125rem;
+  width: 90.4%;
+  padding-bottom: 1.125rem;
+  opacity: 1;
+}
+
+.header__logo {
+  width: 12rem;
+  height: 3rem;
+  margin: 0 20px;
+  margin-top: 5px;
+}
+
+.motto {
+  font-size: 0.5625rem;
+  text-align: center;
+}
+
+.navbar {
+  float: right;
+  margin-left: 4%;
+  margin-top: 1.25rem;
+  width: 70%;
+  letter-spacing: 1px;
+  background-color: transparent;
+}
+
+.header__option {
+  /* margin: 0.625rem;
+  float: left;
+  height: 1.25rem;
+  width: auto;
+  margin-right: 1.5rem;
+  transition: font-weight 0.1s, margin 0.1s; */
+  margin: 0.625rem;
+  float: left;
+  height: 1.25rem;
+  width: auto;
+  margin-right: 1.5rem;
+  transition: font-weight 0.1s, margin 0.1s;
+  /* background-color: transparent; */
+  /* color: white; */
+}
+
+.header__option span {
+  color: red;
+  font-weight: 600;
+}
+/* .header__option {
+  color: #fff ;
+  font-weight: 600;
+} */
+/* .menu li a{
+  color:white;
+} */
+.header__option:nth-child(5) {
+  margin-right: 0;
+  padding-right: 0;
+}
+
+.header__option:hover {
+  font-weight: 570;
+  /* margin: 0.67rem; */
+  margin-right: 1.33rem;
+}
+
+.button {
+  float: left;
+  height: 3.5rem;
+  margin-left: 1.875rem;
+  padding: 1rem;
+  font-weight: 600;
+  border: #000 solid 3px;
+  letter-spacing: 2px;
+  background: white;
+  transition: all 0.2s ease-out;
+}
+
+.button:hover {
+  background: black;
+  color: #fff;
+  cursor: pointer;
+}
+
+#getintouch {
+  float: right;
+  height: 1.25rem;
+  margin-right: 5%;
+  padding-bottom: 0.8rem;
+  /* background-color: transparent; */
+}
+
+#getintouch button {
+  /* float: left; */
+  /* height: 3.5rem; */
+  /* margin-left: 1.875rem; */
+  /* padding: 1rem; */
+  /* font-weight: 600;
+  border: #000 solid 3px;
+  letter-spacing: 2px;
+  background: white;
+  transition: all 0.2s ease-out; */
+  /* margin: 14px 0; */
+  /* width: 95%; */
+  /* white-space: nowrap; */
+  /* padding: 0.6rem; */
+
+  float: left;
+  /* height: 3.5rem; */
+  /* margin-left: 1.875rem; */
+  /* padding: 1rem; */
+  font-weight: 600;
+  border: #000 solid 3px;
+  letter-spacing: 2px;
+  background: white;
+  transition: all 0.2s ease-out;
+  /* color: white; */
+  /* margin: 0px 0; */
+  padding: 0.6rem;
+  /* width: 95%; */
+  white-space: nowrap;
+}
+
+#getintouch button:hover {
+  background: black;
+  color: #fff;
+  cursor: pointer;
+}
+
+#getintouch button tag {
+  font-size: 22px;
+  background-color: inherit;
+  color: inherit;
+  font-weight: 300;
+}
+
+.mobileheader {
+  display: none;
+}
+
+@media only screen and (max-width: 767px) {
+  .mobileheader {
+    display: inline-block !important;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    padding-bottom: 5%;
+  }
+
+  .header {
+    display: none;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #232323;
+  color: #cdcdcd;
+  font-family: "Avenir Next", "Avenir", sans-serif;
+  overflow-x: hidden; /* needed because hiding the menu on the right side is not perfect,  */
+}
+
+a {
+  text-decoration: none;
+  color: #232323;
+
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: tomato;
+}
+
+#menuToggle {
+  display: block;
+  position: absolute;
+  top: 50px;
+  /* right: 50px; */
+  right: 20px;
+  z-index: 1;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle input {
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+
+  cursor: pointer;
+
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+
+  -webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span {
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+
+  background: black;
+  border-radius: 3px;
+
+  z-index: 1;
+
+  transform-origin: 4px 0px;
+
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+    background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+}
+
+#menuToggle span:first-child {
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2) {
+  transform-origin: 0% 100%;
+}
+
+/* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span {
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: white;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3) {
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+  background-color: white;
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2) {
+  opacity: 1;
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu {
+  position: absolute;
+  width: 330px;
+  height: 90vh;
+  margin: -100px 0 0 0;
+  padding: 50px;
+  padding-top: 125px;
+  right: -100px;
+color: white;
+  background: black;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+
+  transform-origin: 0% 0%;
+  transform: translate(100%, 0);
+
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+}
+
+#menutrue{
+  position: absolute;
+  width: 330px;
+  height: 90vh;
+  margin: -100px 0 0 0;
+  padding: 50px;
+  padding-top: 125px;
+  right: -100px;
+color: white;
+  background: black;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+
+  transform-origin: 0% 0%;
+  transform: translate(100%, 0);
+
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+}
+#menutrue li {
+  padding: 10px 0;
+  padding-right: 50px;
+  font-size: 32px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  line-height: 110%;
+  width: 78%;
+  background-color: black;
+  color: white;
+  text-align: right;
+  display: none;
+}
+#menuToggle input:checked ~ ul li {
+  display: inline-block;
+}
+
+/*
+ * And let's fade it in from the left
+ */
+
+#menuToggle input {
+  color: white;
+}
+#menuToggle input:checked ~ ul {
+  transform: none;
+  opacity: 1;
+}
+
+.header__logo_mob {
+  height: 42px;
+  margin-top: 32px;
+  margin-left: 32px;
+}
+.motto_mob {
+  font-size: 7px;
+  text-transform: uppercase;
+  margin-left: 40px;
+}
+
+#getintouchmob {
+  background: transparent;
+  border: 3px solid #fff;
+  color: #fff;
+  font-size: 14px;
+  height: 44px;
+  justify-content: center;
+  margin-left: 12%;
+  margin-top: 70px;
+  text-transform: uppercase;
+  width: 204px;
+}
+
+#getintouchmob button {
+  background: transparent;
+  border: 0;
+  float: left;
+  font-weight: 600;
+  width: auto;
+  height: 44px;
+  letter-spacing: 2px;
+  margin-left: 1.875rem;
+  padding: 1rem;
+  transition: all 0.2s ease-out;
+  color: white;
+  font-size: 15px;
+}
+
+#getintouchmob tag {
+  background-color: inherit;
+}
+
+#logomob {
+  background: transparent;
+  transform: translate(-30px, -70px);
+  height: 42px;
+}
+.redlinesep {
+  margin-top: 20px;
+  width: 226px;
+  margin-left: 10%;
+  border-bottom: #e82127 solid 3px;
+}
+
+@media screen and (max-width: 767px) {
+  #menu {
+    transform: none;
+    opacity: 0;
+    display: none;
+    transition: opacity 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  }
+
+  /* 22.05.23 */
+  #getintouchmob tag {
+    color: #fff;
+    font-size: 18px;
+  }
+  #getintouchmob {
+    margin-left: 15%;
+    display: flex;
+  }
+  #menutrue li {
+    font-size: 25px !important;
+  }
+}
+
+/* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 768px) and (max-width: 1200px) {
+  .hero {
+    margin-left: 0;
+  }
+  .navbar {
+    letter-spacing: 0;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+  }
+
+  #anunanibox {
+    float: none;
+    margin: 0;
+    margin-bottom: 60px;
+  }
+
+  .homerighttext h3 {
+    height: 50px;
+    width: 100%;
+  }
+
+  .homelefttext h3 {
+    height: 38px;
+    width: 50%;
+  }
+
+  #kseb {
+    margin-right: 25px !important;
+    margin-top: 15px !important;
+  }
+
+  #gotoproj {
+    margin-top: 20rem !important;
+  }
+
+  #tellus h2 {
+    text-align: center !important;
+    font-size: 35px !important;
+    background-color: transparent !important;
+    width: 100% !important;
+    margin-top: 60px !important;
+  }
+
+  div#workbtn {
+    text-align: center !important;
+   
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #Footer {
+    background-color: transparent !important;
+  }
+
+  #letstalk button {
+    margin-bottom: 10px !important;
+    letter-spacing: 5px !important;
+  }
+
+  .teamcol {
+    width: 100% !important;
+  }
+
+  .projectcards {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(300px, 1fr)) !important;
+    gap: 0.9rem;
+  }
+
+  .header__logo2 {
+    width: 12rem !important;
+    height: 3rem !important;
+  }
+
+  .header__option2 {
+    font-size: 12px !important;
+  }
+
+  .navbar2 {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+  #getintouch2 {
+    margin-right: 8% !important;
+    padding: 0 !important;
+  }
+
+  #mat h3 {
+    font-size: 4rem !important;
+    line-height: 40px;
+    width: 290px;
+    height: 119px;
+    letter-spacing: 4px;
+    background-color: inherit;
+    text-align: center !important;
+  }
+
+  #mat {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    text-align: center !important;
+    width: 100% !important;
+    height: 100% !important;
+    margin-top: 15rem !important;
+    margin-left: 5% !important;
+  }
+
+  #matterbtn {
+    margin: 0px 0px 162px 0 !important;
+    padding: 15px !important;
+  }
+
+  #matterimg {
+    width: 100% !important;
+  }
+
+  .heroabout {
+    margin-bottom: 5rem !important;
+  }
+
+  #solution {
+    float: none !important;
+    width: 100% !important;
+    margin-left: 0 !important;
+  }
+
+  .about {
+    overflow: hidden !important;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .header__option {
+    /* font-size: 32px; */
+  }
+}
+@media (max-width:875px) {
+  #getintouch{
+    height: 2.25rem;
+    
+  }
+}
+
+
+
+/*------*/
+@media screen and (min-width: 769px) and (max-width: 1048px) {
+  #getintouch {
+    float: right;
+    height: 2.25rem;
+    margin-right: 10%; /* Adjusted the margin-right for responsiveness */
+    padding-bottom: 0.8rem;
+  }
+}

@@ -1,0 +1,6 @@
+/* table> thead> tr> th{
+    background-color: gray;
+} */
+.table-heading tr th{
+    background-color: #DFE0E1;
+}

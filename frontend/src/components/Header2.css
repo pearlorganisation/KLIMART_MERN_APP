@@ -1,0 +1,424 @@
+.header2 {
+  height: 3.2rem;
+  display: flex;
+  align-items: right;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  text-transform: uppercase;
+  padding-left: 10%;
+  padding-top: 1.125rem;
+  width: 90%;
+  padding-bottom: 1.125rem;
+  background-color: transparent;
+  transition: background-color 1s ease;
+  color: #fff;
+}
+
+.header2.colorChange {
+  background-color: #222222;
+  transition: background-color 0.5s ease;
+  opacity: 0.9;
+  color: #fff;
+}
+
+.header2 a {
+  background-color: transparent;
+}
+
+.header__logo2 {
+  width: 12rem;
+  height: 3rem;
+  margin: 0 20px;
+  margin-top: 5px;
+  background-color: transparent;
+}
+
+.motto2 {
+  font-size: 0.5625rem;
+  text-align: center;
+  background-color: transparent;
+  color: white;
+}
+
+.navbar2 {
+  float: right;
+  margin-left: 10%;
+  margin-top: 1.25rem;
+  width: 70%;
+  letter-spacing: 1px;
+  background-color: transparent;
+}
+
+.header__option2 {
+  margin: 0.625rem;
+  float: left;
+  height: 1.25rem;
+  width: auto;
+  margin-right: 1.5rem;
+  transition: font-weight 0.1s, margin 0.1s;
+  background-color: transparent;
+  color: white;
+  font-size: 16px;
+}
+
+.header__option2 span {
+  color: #e82127;
+  font-weight: 600;
+  background: transparent;
+}
+
+.header__option2:nth-child(5) {
+  margin-right: 0;
+  padding-right: 0;
+}
+
+.header__option2:hover {
+  font-weight: 570;
+  /* margin: 0.67rem; */
+  margin-right: 1.33rem;
+}
+
+#getintouch2 button {
+  float: left;
+  /* height: 3.5rem; */
+  /* margin-left: 1.875rem; */
+  /* padding: 1rem; */
+  font-weight: 600;
+  border: white solid 3px;
+  letter-spacing: 2px;
+  background: transparent;
+  transition: all 0.2s ease-out;
+  color: white;
+  /* margin: 0px 0; */
+  padding: 0.6rem;
+  /* width: 95%; */
+  white-space: nowrap;
+}
+
+#getintouch2 button:hover {
+  background-color: white;
+  color: #000;
+  cursor: pointer;
+}
+
+.button2 {
+  float: left;
+  height: 3.5rem;
+  margin-left: 1.875rem;
+  padding: 1rem;
+  font-weight: 600;
+  border: white solid 3px;
+  letter-spacing: 2px;
+  background: transparent;
+  transition: all 0.2s ease-out;
+  color: white;
+}
+
+.button2:hover {
+  background-color: white;
+  color: #000;
+  cursor: pointer;
+}
+
+#getintouch2 {
+  float: right;
+  height: 1.25rem;
+  margin-right: 10%;
+  padding-bottom: 0.8rem;
+  background-color: transparent;
+}
+
+@media only screen and (max-width: 1024px) {
+  #getintouch2 {
+    margin-right: 8%;
+  }
+}
+#getintouch2 button tag {
+  font-size: 22px;
+  background-color: transparent;
+  color: inherit;
+  font-weight: 300;
+}
+
+.mobileheader2 {
+  display: none;
+  z-index: 1;
+}
+
+.mobileheader2.colorChange {
+  background-color: #222222;
+  transition: background-color 0.5s ease;
+  opacity: 1;
+  height: 100px;
+  color: #fff;
+}
+
+@media only screen and (max-width: 900px) {
+  .navbar2 {
+    margin-left: 4%;
+  }
+}
+@media only screen and (max-width: 815px) {
+  .navbar2 {
+    margin-left: 1%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .mobileheader2 {
+    display: inline-block !important;
+    position: fixed;
+    top: 42;
+    z-index: 1;
+    width: 100%;
+    background-color: transparent;
+  }
+
+  .header2 {
+    display: none;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  /* make it look decent enough */
+  background: #232323;
+  color: #cdcdcd;
+  font-family: "Avenir Next", "Avenir", sans-serif;
+
+  overflow-x: hidden; /* needed because hiding the menu on the right side is not perfect,  */
+}
+
+a {
+  text-decoration: none;
+  color: #232323;
+
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: tomato;
+}
+
+#menuToggle2 {
+  display: block;
+  position: absolute;
+  background: transparent;
+  top: 50px;
+  /* right: 50px; */
+  right: 20px;
+  z-index: 1;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle2 input {
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  background-color: transparent;
+  cursor: pointer;
+
+  opacity: 0;
+  z-index: 2;
+
+  -webkit-touch-callout: none;
+}
+
+#menuToggle2 span {
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+
+  background: white;
+
+  border-radius: 3px;
+
+  z-index: 1;
+
+  transform-origin: 4px 0px;
+
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+    background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+}
+#menuToggle2 span:first-child {
+  transform-origin: 0% 0%;
+  background-color: white;
+}
+
+#menuToggle2 span:nth-last-child(2) {
+  transform-origin: 0% 100%;
+  background-color: white;
+}
+
+/* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle2 input:checked ~ span {
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background-color: white;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle2 input:checked ~ span:nth-last-child(3) {
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+  background-color: white;
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle2 input:checked ~ span:nth-last-child(2) {
+  opacity: 1;
+  transform: rotate(-45deg) translate(0, -1px);
+  background-color: white;
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu li a {
+  color: white;
+}
+
+#menu {
+  position: absolute;
+  width: 330px;
+  height: 90vh;
+  margin: -100px 0 0 0;
+  padding: 50px;
+  padding-top: 125px;
+  right: -100px;
+  background: black;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+
+  transform-origin: 0% 0%;
+  transform: translate(100%, 0);
+
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+
+  /* pointer-events: none; */
+}
+
+#menu li {
+  padding: 10px 0;
+  padding-right: 50px;
+  font-size: 32px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  line-height: 110%;
+  background-color: black;
+  color: white;
+  text-align: right;
+  display: none;
+}
+
+#menuToggle2 input:checked ~ ul li {
+  display: inline-block;
+}
+
+/*
+ * And let's fade it in from the left
+ */
+
+#menuToggle2 input {
+  color: white;
+}
+#menuToggle2 input:checked ~ ul {
+  transform: none;
+  opacity: 1;
+}
+
+.header__logo_mob {
+  height: 42px;
+  margin-top: 32px;
+  margin-left: 32px;
+  background: transparent;
+}
+.motto_mob2 {
+  font-size: 7px;
+  text-transform: uppercase;
+  margin-left: 40px;
+  background-color: transparent;
+  color: white;
+}
+
+/* #getintouchmob {
+  display: none;
+} */
+
+#menuToggle2 #getintouchmob button {
+  background: black;
+  border: 0;
+  float: left;
+  font-weight: 600;
+  width: auto;
+  height: 44px;
+  letter-spacing: 2px;
+  margin-left: 0;
+  padding: 1rem;
+  transition: all 0.2s ease-out;
+  color: white;
+  font-size: 15px;
+}
+
+#menuToggle2 input:checked ~ #menu #getintouchmob {
+  display: inline-block;
+  background: transparent;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: white;
+  border: white 3px solid;
+  display: flex;
+  justify-content: center;
+  width: 204px;
+  height: 44px;
+  margin-left: 10%;
+  margin-top: 70px;
+}
+
+#logomob {
+  background: transparent;
+  transform: translate(25px, -70px);
+  height: 42px;
+}
+.redlinesep {
+  margin-top: 20px;
+  width: 226px;
+  margin-left: 10%;
+  border-bottom: #e82127 solid 3px;
+}
+
+@media screen and (max-width: 767px) {
+  #menu {
+    transform: none;
+    opacity: 0;
+    transition: opacity 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .header__option2 {
+    font-size: 30px;
+  }
+  .header__option {
+    font-size: 30px;
+  }
+}

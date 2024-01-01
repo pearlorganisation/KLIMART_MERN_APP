@@ -1,0 +1,1462 @@
+.about {
+  margin: 0;
+  padding: 0;
+}
+
+/*********** Hero Page ************/
+.heroabout {
+  height: 42.5rem;
+  margin-left: 10%;
+  margin-top: 6rem;
+}
+
+#abtherotext {
+  margin-top: 8%;
+  margin-left: 1.5%;
+  transform: translate(0, 350%);
+}
+
+#aboutherotop {
+  margin-top: 2.5%;
+  padding-left: 2%;
+  margin-bottom: 10px;
+}
+
+.hero__textabout {
+  font-size: 3.75rem;
+  font-weight: bold;
+  float: left;
+  margin: 0 1.25rem;
+  width: 42.75rem;
+  height: 14rem;
+  margin-top: 1%;
+  letter-spacing: 0.3125rem;
+  word-spacing: 0.875rem;
+  line-height: 5.25rem;
+}
+.hero__textabout h1 {
+  font-size: 3.25rem;
+  font-weight: bold;
+  float: left;
+  width: 40.75rem;
+  height: 14rem;
+  letter-spacing: 5px;
+  word-spacing: 0.8rem;
+  line-height: 132%;
+}
+
+.hero__textabout line {
+  font-size: 3.75rem;
+  border-bottom: #e82127;
+  border-bottom-style: solid;
+  border-bottom-width: 0.375rem;
+}
+
+#heroimg {
+  float: right;
+  width: 24rem;
+  height: auto;
+  margin-top: 5%;
+  margin-right: 12%;
+}
+
+/********test button*******/
+.aboutbtns {
+  background-color: transparent;
+  font-size: 0.7rem;
+  color: white;
+}
+
+/*********** Challenge ************/
+#challenge {
+  height: 31.25rem;
+  background-color: #f5f5f5;
+}
+
+#challengecontent {
+  line-height: 2rem;
+  padding-left: 7%;
+  height: auto;
+  width: 38.75rem;
+  margin-top: 4%;
+  padding-left: 5%;
+  letter-spacing: 3px;
+  float: left;
+  background: transparent;
+}
+
+#challengecontent p {
+  font-size: 150%;
+  background: transparent;
+}
+#sunnyimg {
+  float: right;
+  transform: translate(0, -7%);
+  width: 23.625rem;
+  height: auto;
+}
+#sunnymob {
+  display: none;
+}
+#redarrow {
+  padding-left: 5%;
+  padding-right: 10%;
+  padding-top: 5%;
+  width: 10.875rem;
+  height: auto;
+  float: left;
+  background: transparent;
+}
+#solution {
+  float: right;
+  margin-left: 40%;
+  background: transparent;
+  transform: translate(0, -7rem);
+}
+
+.solutionmob {
+  display: none;
+  background-color: #e82127;
+  width: 100%;
+  height: 450px;
+}
+
+.solutionmob .toptext {
+  color: white;
+  padding-top: 20%;
+}
+.solutiontextmob {
+  background-color: transparent;
+  padding: 0 10%;
+  padding-top: 10%;
+}
+.solutiontextmob p {
+  background-color: transparent;
+  color: white;
+  font-size: 20px;
+  line-height: 150%;
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+
+#afterchallenge {
+  background-image: url("../assets/bigpic.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 42.75rem;
+}
+
+/***********  Mission  ************/
+
+#mission {
+  background-image: url("../assets/missionbg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 30.5rem;
+}
+
+#mission .toptext {
+  color: white;
+  background-color: transparent;
+  margin-left: 0;
+  width: 100%;
+  padding-left: 0;
+  margin-bottom: 10%;
+}
+
+#missioncontent {
+  padding-left: 10%;
+  background-color: transparent;
+}
+
+#missionmotto {
+  background-color: transparent;
+  float: left;
+  margin-top: 12%;
+  width: 33%;
+}
+
+#missionmotto h3 {
+  color: white;
+  background-color: transparent;
+  letter-spacing: 7px;
+  font-size: 2rem;
+}
+
+#vertwhite {
+  float: left;
+  padding-left: 0%;
+  margin-top: 6%;
+  height: 18rem;
+  background-color: transparent;
+}
+#linemobwhite {
+  display: none;
+}
+
+#missiontext {
+  background-color: transparent;
+  width: 30%;
+  background-color: transparent;
+  margin-right: 25%;
+  margin-top: 0%;
+  float: right;
+}
+
+#missiontext p {
+  background-color: transparent;
+  width: 100%;
+  background-color: transparent;
+  color: white;
+  font-size: 150%;
+  font-weight: 300;
+  letter-spacing: 3px;
+}
+
+/***********  Process  ************/
+
+#process {
+  height: 115rem;
+  margin-left: 10%;
+  margin-top: 4%;
+}
+
+#process .toptext {
+  padding-left: 0;
+}
+
+#processcontent {
+  height: 42rem;
+}
+
+#processcontent h2 {
+  padding: 0;
+  padding-top: 5%;
+  text-align: left;
+  letter-spacing: 2px;
+  float: left;
+  width: 42.75rem;
+  margin-bottom: 2.3rem;
+}
+
+#processmainimg {
+  float: right;
+  margin-right: 10%;
+  width: 27rem;
+  height: auto;
+}
+
+#processcontent p {
+  float: left;
+  width: 45%;
+  font-weight: 300;
+  letter-spacing: 1px;
+  line-height: 150%;
+}
+
+.linetop {
+  width: 7rem !important;
+  height: 0.14rem;
+  float: left;
+  padding: 5% 5% 0 0%;
+  margin-top: 5%;
+}
+
+#processubhead {
+  font-size: 150%;
+  float: left;
+  width: 40%;
+  margin-top: 2%;
+  margin-right: 5%;
+  margin-bottom: 1.5rem;
+}
+
+#processubhead1 {
+  font-size: 150%;
+  float: left;
+  width: 40%;
+  margin-top: 2%;
+  margin-right: 5%;
+  padding-left: 20%;
+  margin-bottom: 1.5rem;
+}
+
+#processsubcontent1 {
+  height: 21%;
+  margin-top: 5%;
+}
+
+#processsubcontent1 p {
+  float: left;
+  width: 70%;
+  font-weight: 300;
+  letter-spacing: 1px;
+  line-height: 150%;
+  padding-left: 20%;
+}
+
+#processsub1 {
+  float: left;
+  width: 35.375rem;
+}
+
+#processsubcon1 {
+  float: left;
+  width: 50%;
+}
+
+#processsubcon1 img {
+  padding-left: 20%;
+  padding-right: 70%;
+  margin-top: 0;
+  padding-top: 3%;
+  width: 14%;
+}
+
+#processsubcontent2 {
+  height: 35%;
+  margin-top: 0;
+}
+
+#processsubcon2 {
+  float: left;
+  width: 25%;
+  margin-top: 5%;
+}
+
+#processubhead2 {
+  font-size: 150%;
+  float: left;
+  width: 65%;
+  margin-top: 4%;
+  margin-right: 5%;
+  margin-bottom: 1.5rem;
+}
+
+#processsubcontent2 p {
+  float: left;
+  font-weight: 300;
+  letter-spacing: 1px;
+  line-height: 150%;
+}
+
+#processsub2 {
+  float: right;
+  margin-right: 10.7%;
+  width: 50rem;
+}
+#processsub2mob {
+  display: none;
+}
+
+#processsubcon2 img {
+  padding-top: 3%;
+  padding-right: 70%;
+  width: 14%;
+}
+
+#processafter {
+  margin-left: 10%;
+  margin-bottom: 7%;
+  width: 80%;
+  margin: 0 10%;
+  margin-bottom: 7rem;
+}
+
+/***********  Values  ************/
+
+.valuesheadermob {
+  display: none;
+}
+
+.valuesrow {
+  display: grid;
+ 
+
+}
+
+#valuesheader {
+  background-image: url("../assets/valuesbg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 35rem;
+}
+
+#valuesheader h2 {
+  color: white;
+  background: transparent;
+  margin: 0;
+  padding-left: 10%;
+  padding-top: 12%;
+  float: left;
+  width: 25%;
+  text-align: left;
+}
+
+.values {
+  margin: 3% 10%;
+  display: flex;
+}
+
+#valuestoptext {
+  margin-left: 10%;
+}
+.valuecol img {
+  display: block;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  height: 5rem;
+  width: auto;
+}
+
+.valuecol p {
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.valuetitle {
+  font-weight: 600;
+  letter-spacing: 3px !important;
+  margin-top: 10%;
+}
+
+.valuecontent {
+  font-weight: 300;
+  margin: 5% 0;
+  width: 80%;
+  margin-left: 10%;
+}
+
+/*************  Process  **************/
+
+#meaning {
+  height: 75rem;
+}
+
+#themeaning {
+  padding-left: 10%;
+  display: block;
+  height: 10%;
+}
+
+#themeaning h3 {
+  font-size: 2rem;
+  letter-spacing: 3px;
+}
+/* 
+#themeaning h3:first-child {
+  width: 25%;
+  height: auto;
+} */
+#themeaning h3:nth-child(2) {
+  width: 13%;
+  height: 1%;
+  float: left;
+  margin-right: 0;
+}
+
+#meaningline {
+  width: 7%;
+  padding-top: 1.5%;
+  height: 1px;
+  float: left;
+  padding-left: 2%;
+}
+
+#companymeaning {
+  margin-top: 8%;
+}
+
+#klim {
+  text-transform: uppercase;
+  float: left;
+  margin-right: 5%;
+  padding-left: 10%;
+}
+
+#klim p {
+  font-size: 375%;
+  font-weight: 300;
+  letter-spacing: 0.75rem;
+  padding-top: 22%;
+}
+
+#art {
+  height: 12rem;
+}
+#artmob {
+  display: none;
+}
+
+.artsquare {
+  height: 9rem;
+  width: 9rem;
+  border: black solid 1px;
+  float: left;
+}
+
+.artsquare:hover {
+  background-color: black;
+  transition: all 0.2s ease;
+}
+
+.artsquare:hover .artbutton {
+  color: white;
+  transition: all 0.2s ease;
+}
+
+.artbutton {
+  font-size: 375%;
+  font-weight: 700;
+  text-align: center;
+  padding: 0;
+  background-color: transparent;
+  padding-top: 22%;
+}
+
+.artline {
+  width: 15%;
+  padding-top: 5.5%;
+  height: 1px;
+  float: left;
+  margin-bottom: 5%;
+}
+.artcontent {
+  background-color: black;
+  opacity: 0.7;
+  width: 36rem;
+  height: 20.4rem;
+  margin-top: 5.42rem;
+  transform: translate(-50%, 0);
+}
+
+.artcontitle {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  background: transparent;
+  color: white;
+  padding-left: 20%;
+  padding-top: 13%;
+  font-weight: 600;
+  letter-spacing: 3px;
+  opacity: 1;
+}
+
+.artcontext {
+  background: transparent;
+  font-size: 1rem;
+  font-weight: 300;
+  color: white;
+  padding-left: 20%;
+  margin-top: 2%;
+  line-height: 150%;
+  width: 60%;
+  opacity: 1;
+}
+
+#themeaningbg {
+  background-image: url("../assets/themeaningbg.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 42rem;
+  object-fit: contain;
+}
+/***********  Careeers Button  ************/
+/* 
+#careersbutton {
+  padding: 0 9%;
+  height: 18.75rem;
+}
+
+#careersbuttonleft {
+  background-color: #f5f5f5;
+  float: left;
+  width: 80%;
+  height: 14rem;
+}
+
+#careersbutton h3 {
+  width: 92%;
+  padding: 7%;
+  padding-bottom: 0;
+  height: 50%;
+  line-height: 150%;
+}
+#careersbutton h3 span {
+  font-size: inherit;
+  background: inherit;
+  border-bottom: black solid 3px;
+  transition: all 0.3s;
+}
+
+#careersbutton h3 span:hover {
+  font-size: larger;
+}
+
+#careersbuttonright {
+  background-color: #d9d9d9;
+  float: left;
+  width: 20%;
+  height: 14rem;
+  transition: all 0.2s ease;
+}
+
+#careersbuttonright:hover {
+  background-color: #e82127;
+}
+#careersbuttonright svg {
+  background-color: transparent;
+  font-size: 250%;
+  padding-top: 37%;
+  padding-left: 40%;
+  transition: 0.3s;
+  stroke: white;
+  fill: white;
+}
+#careersbuttonright:hover svg {
+  padding-top: 35%;
+  padding-left: 38%;
+  font-size: 300%;
+  stroke: white;
+  fill: white;
+}
+
+a {
+  font-size: inherit;
+  background: inherit;
+} */
+/***********  Our People  ************/
+
+#ourpeople {
+  height: 87.5rem;
+}
+
+#ourpeopletop {
+  margin-left: 5.7%;
+  margin-bottom: 5%;
+}
+
+#peopledrive {
+  height: 75rem;
+}
+
+#peopledrive h3 {
+  font-size: 3rem;
+  margin: 0;
+  margin-left: 10%;
+  width: 35%;
+  float: left;
+  margin-bottom: 3rem;
+}
+
+#peopleline {
+  width: 50%;
+  float: right;
+  padding-top: 7%;
+  margin-bottom: 6%;
+  height: 3px;
+}
+
+#aboutquote {
+  display: flex;
+  width: 50rem;
+  margin: 0 20rem 0 20rem;
+  padding-top: 3%;
+  margin-bottom: 6%;
+}
+
+/* #peoplecontainer {
+  height: 50rem;
+} */
+
+#profilecard {
+  background-image: url("../assets/peoplebg1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 39.375rem;
+  width: 40%;
+  /* float: left; */
+  margin-right: 10px;
+}
+
+#name {
+  color: white;
+  background: transparent;
+  padding-top: 40%;
+  font-weight: 600;
+  padding-left: 24%;
+}
+
+#designation {
+  background: transparent;
+  color: white;
+  font-weight: 300;
+  padding-left: 24%;
+}
+
+#credentials {
+  background: transparent;
+  color: white;
+  padding-left: 24%;
+}
+
+#credentials ul {
+  background: transparent;
+  color: white;
+  list-style-type: none;
+}
+
+#credentials ul li {
+  background: transparent;
+  color: white;
+  margin-top: 8%;
+  padding-left: 5%;
+  width: 70%;
+  font-weight: 300;
+}
+
+#credentials ul li strong {
+  background: transparent;
+  color: white;
+  margin-top: 15%;
+  width: 70%;
+  font-weight: 600;
+}
+
+#aboutcontent {
+  /* float: right;  */
+  margin-top: 10%;
+  /* margin-right: 10%; */
+  width: 40%;
+  font-weight: 300;
+  letter-spacing: 1px;
+  line-height: 150%;
+}
+
+/********** Team ***********/
+
+#team {
+  height: auto;
+  margin-top: 15%;
+  padding-bottom: 66px;
+}
+
+#theteam {
+  height: auto;
+  width: 100%;
+}
+
+#theteam h3 {
+  margin-left: 10%;
+  padding-right: 1.5rem;
+  float: left;
+  height: auto;
+  font-size: 2rem;
+}
+
+#teamline {
+  width: 15%;
+  padding-top: 1.2%;
+  height: 1px;
+  float: left;
+  padding-right: 50%;
+  margin-bottom: 5%;
+}
+
+.teamrow {
+  padding-left: 10%;
+}
+
+.teamrow:last-child {
+  margin-bottom: 12%;
+}
+
+.teamcol {
+  width: 15%;
+  padding-right: 2%;
+  display: inline-block !important;
+}
+
+.teamcol p {
+  letter-spacing: 1px;
+}
+/* map */
+.map_component {
+  position: relative;
+  width: 80%;
+  height: 57.5rem;
+  display: flex;
+  justify-content: flex-end;
+  margin: 4rem auto;
+}
+.map_component * {
+  background-color: transparent;
+}
+.section_head {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+.section_head .section_title {
+  font-size: 2rem;
+  font-weight: 2rem;
+  letter-spacing: 6px;
+  font-weight: bold;
+}
+.map_circle {
+  position: relative;
+  width: 57.5rem;
+  height: 100%;
+  display: flex;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: #f5f5f5;
+}
+.map_map {
+  position: absolute;
+  z-index: 1;
+  right: 30.625rem;
+  width: min-content;
+  padding-left: 0;
+}
+
+.mapimg {
+  height: 39rem;
+}
+
+.map_btns > img {
+  width: 34.375rem;
+  height: 39.0625rem;
+}
+.map_btns {
+  flex-grow: 1;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.map_btn {
+  width: 100%;
+  height: 100%;
+  flex-grow: 1;
+  padding: 2.5rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transition: all 500ms ease-in-out;
+  cursor: pointer;
+}
+.map_btn:hover {
+  background-color: red !important;
+  color: white;
+}
+
+.map_btn > h1 {
+  color: inherit;
+  margin: 0;
+  padding: 0;
+  float: none;
+  width: auto;
+  height: auto;
+  font-size: 6rem;
+  font-weight: 400;
+}
+.map_btn > p {
+  color: inherit;
+  margin: 1.5rem 0;
+  font-size: 3rem;
+  letter-spacing: 5px;
+}
+.map_btn.selected {
+  background-color: black;
+  color: white;
+}
+.map_btn:first-child {
+  justify-content: flex-end;
+}
+
+.viewmorebtnline {
+  width: 100%;
+  background-color: #000;
+  box-sizing: border-box;
+  height: 1px;
+}
+
+.slogan_heading {
+  display: flex;
+  margin: 0 20rem 6%;
+  padding-top: 0;
+  width: 50rem;
+  flex-direction: column;
+}
+
+.slogan_heading h2 {
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  padding-bottom: 0;
+  height: 50%;
+  background-color: transparent;
+  line-height: 150%;
+  letter-spacing: 3px;
+}
+
+.slogan_heading h2 svg {
+  font-size: 40px;
+  padding: 25px;
+  margin: 20px;
+}
+
+.slogan_heading .seperatorline {
+  height: 1px;
+  background-color: #e82127;
+  width: 100%;
+  position: relative;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+
+.slogan_heading .seperatorline::before {
+  content: "";
+  display: block;
+  height: 8px;
+  width: 7rem;
+  background-color: #e82127;
+  position: absolute;
+  top: 0;
+}
+
+.slogan_heading .seperatorline p {
+  position: absolute;
+  top: 5px;
+  margin-top: 10px;
+  color: #000;
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 767px) {
+  .toptext {
+    font-size: 0.75rem;
+    /* margin-bottom: 7%; */
+  }
+  .toptext img {
+    width: 20%;
+  }
+  .heroabout {
+    height: auto;
+    margin-left: 5%;
+    margin-top: 20%;
+  }
+  .hero__textabout {
+    float: none;
+    /* width: 100%; */
+    width: 95%;
+    height: 230px;
+    display: block;
+  }
+  .hero__textabout h1 {
+    float: none;
+    width: 80vw;
+    font-size: large;
+  }
+  #heroimg {
+    float: none;
+    transform: scale(1.5);
+    height: auto;
+    margin-left: 20%;
+    width: 50vw;
+    margin-bottom: 50px;
+  }
+  .hero__textabout line {
+    border: none;
+    height: auto;
+  }
+  #sunnyimg {
+    display: none;
+  }
+  #sunnymob {
+    width: 100%;
+    display: inline-block;
+    margin-top: 3rem;
+  }
+  #challenge {
+    height: auto;
+  }
+  /* #challengecontent {
+    margin-top:14%;
+  } */
+  #challengecontent p {
+    font-size: 20px;
+    line-height: 25px;
+    padding-left: 1.7rem;
+    width: 90vw;
+    margin-bottom: 10px;
+  }
+  #redarrow {
+    display: none;
+  }
+  #solution {
+    display: none;
+  }
+  .solutionmob {
+    display: inline-block;
+  }
+  #afterchallenge {
+    height: 186px;
+  }
+  #mission {
+    height: 700px;
+  }
+
+  #missioncontent {
+    padding-left: 0;
+  }
+  #missionmotto {
+    /* width: 100%; */
+    width: 85%;
+    padding-left: 10%;
+  }
+  #missionmotto h3 {
+    font-size: 25px;
+  }
+  #missiontext {
+    float: none;
+    width: 90%;
+    padding-left: 10%;
+  }
+  #vertwhite {
+    display: none;
+  }
+  #linemobwhite {
+    display: inline-block;
+    width: 100%;
+    height: 1px;
+    margin: 15% 0;
+  }
+  #missiontext p {
+    font-size: 24px;
+    line-height: 140%;
+  }
+  #process {
+    height: 1500px;
+  }
+  #processmainimg {
+    width: 70vw;
+    float: right;
+    margin-bottom: 10%;
+  }
+  #processcontent {
+    height: auto;
+  }
+  #processcontent h2 {
+    float: none;
+    width: 100%;
+  }
+  #processcontent p {
+    float: none;
+    width: 100%;
+    font-size: 16px;
+    margin-bottom: 10%;
+  }
+  .linetop {
+    float: none;
+  }
+  #processubhead {
+    float: none;
+    font-size: 20px;
+    width: 90%;
+    letter-spacing: 2px;
+  }
+
+  #processsubcon1 {
+    margin-top: 3rem;
+    width: 100%;
+  }
+  #processsubcon1 img {
+    padding-left: 0;
+  }
+  #processubhead1 {
+    font-size: 20px;
+    padding-left: 0;
+    /* width: 360px; */
+    width: 100%;
+    height: 30px;
+    margin-right: unset;
+  }
+  #processsubcontent1 p {
+    padding-left: 0;
+    font-size: 16px;
+    height: 141px;
+    /* width: 360px; */
+    width: 100%;
+  }
+
+  #processsub2 {
+    display: none;
+  }
+  #processsubcontent2 {
+    margin-top: 3rem;
+    float: left;
+  }
+  #processsub2mob {
+    display: inline-block;
+    padding-top: 0 !important;
+    width: 340px !important;
+  }
+
+  #processubhead2 {
+    /* width: 360px; */
+    width: 100%;
+    height: 30px;
+    font-size: 20px;
+  }
+  #processsubcon2 {
+    /* width: 392px; */
+    width: 100%;
+  }
+  #processsubcon2 img {
+    padding-right: 0;
+  }
+  #processsubcon2 p {
+    float: left;
+    font-size: 16px;
+    /* width: 360px; */
+    width: 100%;
+  }
+  #processafter {
+    margin-left: 10%;
+    margin-bottom: 7%;
+    width: 95%;
+    margin: 0 2.5%;
+    margin-bottom: 7rem;
+  }
+
+  .valuesheadermob {
+    display: inline-block;
+    width: 100vw;
+    transform: translate(0, 2%);
+  }
+  #valuesheader {
+    background: black;
+    height: 300px;
+  }
+  #valuesheader h2 {
+    margin-top: 7%;
+    width: 70%;
+    font-size: 32px;
+  }
+  #valuestoptext {
+    margin-left: 0;
+  }
+  .values .span-1-of-3 {
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    width: 100% !important;
+  }
+  .valuecol img {
+    height: 86px;
+  }
+  .valuetitle {
+    font-size: 18px;
+  }
+  .valuecontent {
+    font-size: 16px;
+  }
+  #meaning {
+    height: auto;
+  }
+  #themeaning {
+    margin-top: 20%;
+  }
+  #themeaning h3 {
+    font-size: 25px;
+  }
+  #themeaning h3:nth-child(2) {
+    width: 40%;
+  }
+  #meaningline {
+    width: 20%;
+    height: 2px;
+    padding-top: 15px;
+  }
+
+  #klim {
+    display: none;
+  }
+
+  #klimmob {
+    text-transform: uppercase;
+    float: none;
+    margin-right: 5%;
+    padding-left: 5%;
+    margin-bottom: 10%;
+  }
+
+  #klimmob p {
+    font-size: 375%;
+    font-weight: 300;
+    letter-spacing: 0.75rem;
+    padding-top: 12%;
+  }
+
+  #art {
+    display: none;
+  }
+  #themeaningbg {
+    display: none;
+  }
+  .viewmorebtnline {
+    width: 60% !important;
+    float: right;
+    margin-top: 5%;
+    height: 1px;
+  }
+
+  #artmob {
+    /* width: 100%; */
+    width: 95%;
+    padding-left: 5%;
+    height: 800px;
+    display: inline-block;
+  }
+  .artsquare {
+    float: left;
+    width: 17%;
+  }
+  .artconmob {
+    float: right;
+    width: 63%;
+    /* /* margin-left: 5%;
+    margin-bottom: 15%; */
+  } 
+  .artheader {
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    /* padding-top: 12%; */
+    letter-spacing: 3px;
+    margin-bottom: 10%;
+  }
+  .artcon {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 125%;
+  }
+  .vl {
+    /* border-left: 2px solid black; */
+    height: 235px;
+    margin-left: 8.5%;
+  }
+  .section_title {
+    font-size: 25px;
+  }
+  .viewmorebtnline {
+    width: 25% !important;
+    margin-top: 0.5rem;
+  }
+  .map_component {
+    display: none;
+  }
+  .map_map {
+    display: none;
+  }
+  .map_circle {
+    height: 330px;
+    width: 100%;
+    border-radius: 50%;
+    transform: rotate(-90deg);
+  }
+  .map_btn {
+    transform: rotate(90deg);
+  }
+
+  .map_btns .map_btn:first-child h1 {
+    padding-left: 40%;
+  }
+  .map_btns .map_btn:last-child {
+    transform: translate(0, -10%);
+  }
+  .map_btns .map_btn:last-child h1 {
+    padding-right: 40%;
+  }
+  #careersbutton {
+    height: 300px !important;
+  }
+  #ourpeople {
+    height: fit-content;
+  }
+  #ourpeopletop {
+    font-size: 12px;
+    padding-left: 0;
+    margin-bottom: 50;
+  }
+  #peopledrive {
+    height: auto;
+  }
+  #peopledrive h3 {
+    font-size: 32px;
+    /* width: 100%; */
+    width: 90%;
+    line-height: 125%;
+  }
+  #peopleline {
+    width: 40%;
+
+    padding-right: 25%;
+    padding-top: 5%;
+    height: 1px;
+  }
+  #aboutquote {
+    display: inline-block;
+    margin: 0;
+    margin-right: 0 !important;
+    margin-bottom: 50px;
+    width: 95%;
+    padding: 0 2.5%;
+  }
+  #peoplecontainer {
+    height: fit-content;
+  }
+  #profilecard {
+    float: none;
+    width: 100%;
+    height: 580px;
+    background-color: #1f1f1f;
+  }
+.select_projetcs{
+  margin-top:50px;
+}
+  #name {
+    font-size: 12px;
+  }
+  #designation {
+    font-size: 12px;
+  }
+  #credentials ul li {
+    margin-top: 6%;
+    padding-left: 5%;
+    font-size: 12px;
+    width: 70%;
+    font-weight: 300;
+  }
+  #credentials ul li strong {
+    font-size: 12px;
+  }
+  #aboutcontent {
+    float: none;
+    margin: 10% 5%;
+
+    letter-spacing: 1px;
+  }
+  #aboutcontent p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 150%;
+  }
+
+  .teamcol p {
+    font-size: 12px;
+    margin-bottom: 20px;
+  }
+.theTeamcontainer{
+  display:flex;
+  flex-wrap: wrap;
+  
+}
+  /* 22.05.23 */
+  #theteam h3 {
+    margin-left: 5%;
+  }
+  .teamrow {
+    padding-left: 5%;
+  }
+  #teamline {
+    padding-top: 2%;
+  }
+  .teamcol {
+    padding-right: unset;
+  }
+
+  .slogan_heading {
+    margin: 30px 0;
+    width: 100%;
+  }
+
+  .slogan_heading .seperatorline {
+    width: 85%;
+  }
+
+  .slogan_heading h2 svg {
+    font-size: 25px;
+    margin: 20px;
+  }
+
+  #team {
+    height: auto;
+    padding-bottom: 66px;
+    /* margin-top: 70%; */
+  }
+
+  #projectcaption h2{
+    width: 100%;
+  }
+
+  .about{
+    overflow: hidden;
+  }
+}
+
+.values{
+  display: flex;
+}
+
+@media (max-width:760px) {
+.values{
+  flex-wrap: wrap;
+}
+#aboutcontent{
+  width: 100%;
+}
+}
+
+@media (max-width:1208px) {
+  #challenge{
+    background-color: white;
+    /* height: auto; */
+  }
+}
+
+@media (max-width:769px) {
+  .artsquare{
+    height:9rem;
+    width:9rem;
+  }
+}
+
+@media (max-width:875px) {
+  .artsquare{
+    height:7rem;
+    width:6rem;
+  }
+}
+@media (max-width:769px) {
+  .artsquare{
+    height:9rem !important;
+    width:9rem !important;
+  }
+}
+
+/* style by gaurav starts here*/
+@media (max-width:1900px) {
+  .theTeamcontainer{
+    gap:25px !important;
+    display: flex;
+  }
+  #team{
+    padding-bottom: 140px !important;
+  }
+}

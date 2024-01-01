@@ -1,0 +1,149 @@
+.select {
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top:50px;
+}
+
+.selectedprojectcards {
+  display: flex;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.5rem;
+  cursor: pointer;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.selectedprojectcards .projectcard { 
+  height: 100%;
+  
+   display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.selectedprojectcards .cardtoptext {
+  font-size: 0.7rem;
+  font-weight: regular;
+ 
+
+}
+
+.selectedprojectcards .cardimg {
+  flex-grow: 1;
+  
+height:200px;
+
+}
+.selectedprojectcards .cardimg img {
+  height:100%;
+  width: 100%;
+  object-fit: cover;
+  overflow: hidden;
+  transition: 0.5s all ease-in-out;
+ 
+}
+
+.selectedprojectcards .cardimg img:hover {
+  transform: scale(1.05);
+}
+
+.selectedprojectcards .projectcardbottom {
+  margin: 1rem 0;
+  margin-bottom: 2.3rem;
+}
+
+.selectedprojectcards .projectcardtitle {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1rem;
+  letter-spacing: 0.12rem;
+}
+.selectedprojectcards .projectcardcaption {
+  font-size: 0.9rem;
+  font-weight: regular;
+  margin: 0.5rem 0;
+}
+.selectedprojecttitle {
+  display: flex;
+  font-size: 2rem;
+  gap: 4rem;
+  font-weight: bold;
+  margin: 2rem 0;
+  letter-spacing: 3px;
+}
+.selectedprojecttitle::after {
+  content: "";
+  display: block;
+  height: 1px;
+  background-color: black;
+  width: 9rem;
+}
+.seperatorline {
+  height: 1px;
+  background-color: black;
+  width: 100%;
+  position: relative;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+.seperatorline::before {
+  content: "";
+  display: block;
+  height: 8px;
+  width: 7rem;
+  background-color: black;
+  position: absolute;
+  bottom: 0;
+}
+.selectmobile {
+  display: none;
+}
+.mobcard {
+  margin-bottom: 72px;
+}
+.mobcard:last-child {
+  margin-bottom: 0px;
+}
+.mobcard div {
+  margin-bottom: 8px;
+}
+.moblabel {
+  font-size: 12px;
+  text-transform: uppercase;
+}
+.mobtitle {
+  font-size: 16px;
+}
+.mobprojimg {
+  width: 80vw;
+  margin-bottom: 10px;
+}
+.mobcaption {
+  font-size: 12px;
+}
+
+/* #anunanihover {
+  width: 566px;
+  height: 881px;
+  overflow: hidden;
+}
+#anunanihover img {
+  width: 100%;
+  transition: 0.5s all ease-in-out;
+}
+#anunanihover:hover img {
+  transform: scale(1.05);
+} */
+@media only screen and (max-width: 767px) {
+  /* .projectcard {
+    width: 80vw !important;
+    height: 40%;
+    display: inline-block !important; 
+  }*/
+  /* .selectdesktop {
+    display: none;
+  } */
+  .selectmobile {
+    display: inline-block;
+  }
+}

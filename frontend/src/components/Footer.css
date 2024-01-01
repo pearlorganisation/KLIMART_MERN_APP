@@ -1,0 +1,274 @@
+#Footer {
+  padding-left: 10%;
+  height: 32rem;
+  width: 90%;
+  background-color: #f5f5f5;
+  background-size: cover;
+}
+
+#logo {
+  height: auto;
+  width: 14.75rem;
+  background-color: inherit;
+  margin-top: 5.8rem;
+  margin-bottom: 0;
+}
+
+#footermotto {
+  text-transform: none;
+  padding-top: 1%;
+  font-size: 100%;
+  font-weight: 500;
+  background-color: inherit;
+  letter-spacing: 2px;
+  color: #595959;
+}
+
+#footerleft {
+  margin-top: 5rem;
+  background-color: transparent;
+}
+
+#footerleft h4 {
+  color: #595959;
+  background-color: transparent;
+  font-size: 150%;
+  letter-spacing: 3px;
+}
+
+#letstalk {
+  float: left;
+  background-color: transparent;
+  width: 28%;
+}
+
+#letstalk button {
+  border: none;
+  background-color: transparent;
+  margin-top: 13px;
+  font-size: 200%;
+  font-weight: 700;
+  color: #e82127;
+  letter-spacing: 7px;
+  transition: all 0.2s ease;
+}
+
+#letstalk button svg {
+  font-size: 100%;
+  background-color: transparent;
+  stroke: #e82127;
+  fill: #e82127;
+  margin-left: 19px;
+  margin-right: 7rem;
+  transition: all 0.2s ease;
+}
+
+#letstalk button:hover {
+  font-size: 225%;
+  cursor: pointer;
+}
+
+#letstalk button:hover svg {
+  padding-left: 2rem;
+  margin-right: 4rem;
+  transition: all 0.2s ease;
+}
+
+#careers {
+  background-color: transparent;
+  float: left;
+}
+
+#careers button {
+  border: none;
+  background-color: transparent;
+  margin-top: 13px;
+  font-size: 200%;
+  font-weight: 700;
+  color: #e82127;
+  letter-spacing: 7px;
+  transition: all 0.2s ease;
+}
+
+#careers button svg {
+  font-size: 100%;
+  background-color: transparent;
+  stroke: #e82127;
+  fill: #e82127;
+  margin-left: 19px;
+  margin-right: 7rem;
+  transition: all 0.2s ease;
+}
+
+#careers button:hover {
+  font-size: 225%;
+  cursor: pointer;
+}
+
+#careers button:hover svg {
+  padding-left: 2rem;
+  margin-right: 4rem;
+  transition: all 0.2s ease;
+}
+
+#footerright {
+  float: right;
+  background-color: transparent;
+  margin-right: 10%;
+}
+
+.footertitle {
+  color: #595959;
+  font-size: 100%;
+  font-weight: 600;
+  letter-spacing: 1px;
+  background-color: transparent;
+  margin-bottom: 40px;
+  text-align: left;
+}
+
+#links {
+  margin-left: 5%;
+  width: 17%;
+  float: left;
+  background-color: transparent;
+}
+
+#linkslist {
+  background-color: transparent;
+  list-style: none;
+}
+#linkslist li {
+  text-align: left;
+  background-color: transparent;
+  text-transform: uppercase;
+  color: #595959;
+  padding-left: 5px;
+  font-size: 75%;
+  margin-bottom: 23px;
+  letter-spacing: 1px;
+  transition: all 0.3s;
+  width: 70px;
+}
+
+#linkslist li:hover {
+  font-weight: 500;
+  color: black;
+}
+#socials {
+  margin-left: 142px;
+  float: left;
+  background-color: transparent;
+}
+
+#socials ul {
+  background-color: transparent;
+  list-style: none;
+}
+#socials ul li {
+  background-color: transparent;
+  text-transform: uppercase;
+  font-size: 75%;
+  margin-bottom: 23px;
+  text-align: left;
+}
+
+#fb:hover {
+  color: #1877f2;
+  font-weight: 500;
+}
+#ig:hover {
+  color: #c32aa3;
+  font-weight: 500;
+}
+#li:hover {
+  color: #0a66c2;
+  font-weight: 500;
+}
+#tw:hover {
+  color: #1da1f2;
+  font-weight: 500;
+}
+#yt:hover {
+  color: #ff0000;
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 767px) {
+  #Footer {
+    height: auto;
+    background-color: unset;
+    padding-left: 5%;
+  }
+  #footermotto {
+    font-size: 150%;
+  }
+  #logo {
+    height: auto;
+    width: 19.75rem;
+    background-color: inherit;
+    margin-top: 5rem;
+    margin-bottom: 0;
+  }
+  #letstalk {
+    margin-top: 3rem;
+    width: 30rem;
+  }
+  #letstalk,
+  #letstalk button {
+    font-size: 165%;
+  }
+  #careers {
+    margin-top: 6rem;
+  }
+  #careers,
+  #careers button {
+    font-size: 165%;
+  }
+
+  /*flip the divs*/
+
+  .flipped {
+    display: flex;
+    flex-direction: column-reverse;
+    background-color: inherit;
+  }
+  #footerleft {
+    /* margin-top: 5rem; */
+    margin-top: unset;
+    height: 30rem;
+    float: left;
+  }
+  #footerright {
+    margin-right: 0;
+    margin-top: 2rem;
+    width: 100%;
+  }
+  .footertitle {
+    font-size: 16px;
+    float: left;
+  }
+  .footertitle p {
+    margin-bottom: 0;
+  }
+
+  #links {
+    margin-left: 0;
+    float: left;
+  }
+  #links li {
+    font-size: 12px;
+  }
+  #socials {
+    margin-left: 0;
+    float: left;
+    height: 300px;
+    margin-left: 35%;
+  }
+  #socials p {
+    width: 100%;
+  }
+  #socials li {
+    font-size: 12px !important;
+  }
+}

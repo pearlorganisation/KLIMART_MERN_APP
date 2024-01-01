@@ -1,0 +1,44 @@
+.readmore:hover {
+  color: blue;
+  cursor: pointer;
+}
+.readmore {
+  font-size: 12px;
+  color: #fe5502;
+}
+.Project-table {
+  max-height: 100vh;
+}
+.Project-table-content {
+  overflow: scroll;
+  height: 80vh;
+}
+.image-uploading {
+  text-align: center;
+}
+
+.drop-zone {
+  border: 2px dashed #ccc;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.drop-zone img {
+  max-width: 100%;
+  max-height: 300px;
+}
+
+.custom-loader {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 6px solid;
+  border-color: lightgray;
+  border-right-color: #3e5ed4;
+  animation: s2 1s infinite linear;
+}
+@keyframes s2 {
+  to {
+    transform: rotate(1turn);
+  }
+}
