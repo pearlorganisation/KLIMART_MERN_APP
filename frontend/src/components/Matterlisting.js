@@ -94,41 +94,41 @@ const matterlistingtabs = [
     title: "Sustainability",
     img: matterlib1,
     color: "#94AD1E",
-    content: `KlimArt was built on the principle that buildings are not just
-    built on site, but they grow from the site, in harmony with the
-    resources that belong there.`,
-  },
-  {
-    title: "Design Processes",
-    img: matterlib2,
-    color: "#44513D",
-    content: `KlimArt was built on the principle that buildings are not just
-    built on site, but they grow from the site, in harmony with the
-    resources that belong there.`,
+    content: `Discover eco-conscious design innovations in our
+    Sustainability blogs where we shape a greener
+    future through our mindful practices.`,
   },
   {
     title: "Materials & Techniques",
     img: matterlib3,
+    color: "#44513D",
+    content: `Explore our Design Processes blogs for insights
+    into our creative journey and innovative design
+    strategies.`,
+  },
+  {
+    title: "People and Events",
+    img: matterlib4,
     color: "#FFC000",
-    content: `KlimArt was built on the principle that buildings are not just
-    built on site, but they grow from the site, in harmony with the
-    resources that belong there.`,
+    content: `Explore cutting-edge AEC materials and
+    techniques in our blogs. Stay ahead with the latest
+    innovations.`,
   },
   {
-    title: "People and Events",
-    img: matterlib4,
+    title: "Design Processes",
+    img: matterlib2,
     color: "#8B7150",
-    content: `KlimArt was built on the principle that buildings are not just
-    built on site, but they grow from the site, in harmony with the
-    resources that belong there.`,
+    content: `Discover our team's on-the-ground impact and
+    community celebrations in People & Events blogs.
+    Join the journey!`,
   },
   {
-    title: "People and Events",
+    title: "Design Processes",
     img: matterlib4,
     color: "#8B7150",
-    content: `KlimArt was built on the principle that buildings are not just
-    built on site, but they grow from the site, in harmony with the
-    resources that belong there.`,
+    content: `Discover our team's on-the-ground impact and
+    community celebrations in People & Events blogs.
+    Join the journey!`,
   },
 ];
 
@@ -256,10 +256,10 @@ function Matterlisting() {
           </div>
           <div className="matterlisting-hero-content">
             <div className="matterlisting-hero-head">
-              {mainTags[selectedTab]?.title}
+              {matterlistingtabs[selectedTab]?.title}
             </div>
             <div className="matterlisting-hero-text">
-              {mainTags[selectedTab]?.description}
+              {matterlistingtabs[selectedTab]?.content}
             </div>
           </div>
           <div className="matterlisting-tabs">

@@ -192,7 +192,7 @@ function Matterhome() {
             data-aos-duration="2000"
             data-aos-easing="ease-in-sine"
           >
-            <img src={handsvg} alt="Hand Image" />
+            {/* <img src={data[3]?.Image} alt="Hand Image" /> */}
           </div>
         </div>
         <div className="black_background">
