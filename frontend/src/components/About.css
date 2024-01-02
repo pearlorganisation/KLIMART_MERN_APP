@@ -371,8 +371,6 @@
 
 .valuesrow {
   display: grid;
- 
-
 }
 
 #valuesheader {
@@ -1232,7 +1230,7 @@ a {
     width: 63%;
     /* /* margin-left: 5%;
     margin-bottom: 15%; */
-  } 
+  }
   .artheader {
     font-size: 18px;
     font-weight: 700;
@@ -1327,9 +1325,9 @@ a {
     height: 580px;
     background-color: #1f1f1f;
   }
-.select_projetcs{
-  margin-top:50px;
-}
+  .select_projetcs {
+    margin-top: 50px;
+  }
   #name {
     font-size: 12px;
   }
@@ -1362,7 +1360,10 @@ a {
     font-size: 12px;
     margin-bottom: 20px;
   }
-
+  .theTeamcontainer {
+    display: flex;
+    flex-wrap: wrap;
+  }
   /* 22.05.23 */
   #theteam h3 {
     margin-left: 5%;
@@ -1397,61 +1398,62 @@ a {
     /* margin-top: 70%; */
   }
 
-  #projectcaption h2{
+  #projectcaption h2 {
     width: 100%;
   }
 
-  .about{
+  .about {
     overflow: hidden;
   }
 }
 
-.values{
+.values {
   display: flex;
 }
 
-@media (max-width:760px) {
-.values{
-  flex-wrap: wrap;
-}
-#aboutcontent{
-  width: 100%;
-}
+@media (max-width: 760px) {
+  .values {
+    flex-wrap: wrap;
+  }
+  #aboutcontent {
+    width: 100%;
+  }
 }
 
-@media (max-width:1208px) {
-  #challenge{
+@media (max-width: 1208px) {
+  #challenge {
     background-color: white;
     /* height: auto; */
   }
 }
 
-@media (max-width:769px) {
-  .artsquare{
-    height:9rem;
-    width:9rem;
+@media (max-width: 769px) {
+  .artsquare {
+    height: 9rem;
+    width: 9rem;
   }
 }
 
-@media (max-width:875px) {
-  .artsquare{
-    height:7rem;
-    width:6rem;
+@media (max-width: 875px) {
+  .artsquare {
+    height: 7rem;
+    width: 6rem;
   }
 }
-@media (max-width:769px) {
-  .artsquare{
-    height:9rem !important;
-    width:9rem !important;
+@media (max-width: 769px) {
+  .artsquare {
+    height: 9rem !important;
+    width: 9rem !important;
   }
 }
 
 /* style by gaurav starts here*/
-@media (max-width:1900px) {
-  .theTeamcontainer{
-    gap:25px !important;
+@media (max-width: 1900px) {
+  .theTeamcontainer {
+    gap: 25px !important;
+    display: flex;
   }
-  #team{
+  #team {
     padding-bottom: 140px !important;
   }
 }

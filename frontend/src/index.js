@@ -23,7 +23,6 @@ root.render(
   //     : ""
   // }
   //  "homepage": "https://development.pearl-developer.com/mern/klimart",
-  
   >
     <ScrollToTop />
     <Provider store={store}>

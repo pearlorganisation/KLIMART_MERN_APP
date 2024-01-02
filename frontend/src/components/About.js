@@ -48,7 +48,12 @@ import BuildProject from "./common/BuildProject";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { FaQuoteLeft } from "react-icons/fa";
 import { useDispatch, useSelector } from "react-redux";
-import { fetchKlimart, getAboutData, getTeam, getValueProvidedData } from "./features/actions/aboutAction";
+import {
+  fetchKlimart,
+  getAboutData,
+  getTeam,
+  getValueProvidedData,
+} from "./features/actions/aboutAction";
 
 const aboutbuttons = [
   {
@@ -76,25 +81,25 @@ function About() {
   const [isHoveringR, setIsHoveringR] = useState(false);
   const [isHoveringT, setIsHoveringT] = useState(false);
 
-
-  const dispatch = useDispatch()
-  const { team ,isLoading,  aboutData,valueProvidedData,KlimartData} = useSelector(state => state.about)
+  const dispatch = useDispatch();
+  const { team, isLoading, aboutData, valueProvidedData, KlimartData } =
+    useSelector((state) => state.about);
   // const {KlimartData}=  useSelector((state)=>state.about)
-//  console.log(valueProvidedData)
-// console.log(KlimartData)
-// console.log(valueProvidedData)
+  //  console.log(valueProvidedData)
+  // console.log(KlimartData)
+  // console.log(valueProvidedData)
 
-// -------------------------------------------------use effect------------------------------------------
- 
+  // -------------------------------------------------use effect------------------------------------------
+
   useEffect(() => {
-    dispatch(getTeam())
-    dispatch(fetchKlimart())
-  }, [])
-  
-  useEffect(()=>{
-    dispatch(getAboutData())
-    dispatch(getValueProvidedData())
-  },[])
+    dispatch(getTeam());
+    dispatch(fetchKlimart());
+  }, []);
+
+  useEffect(() => {
+    dispatch(getAboutData());
+    dispatch(getValueProvidedData());
+  }, []);
 
   const handleMouseOverA = () => {
     setIsHoveringA(true);
@@ -122,10 +127,13 @@ function About() {
     <div className="about">
       <div className="heroabout">
         <div className="heronav" id="abtherotext">
-          <Link to="/">HOME</Link>{">"}ABOUT
+          <Link to="/">HOME</Link>
+          {">"}ABOUT
         </div>
         <div className="toptext" id="aboutherotop">
-          {Array.isArray(aboutData) && aboutData?.length>0 && aboutData?.[0]?.header}
+          {Array.isArray(aboutData) &&
+            aboutData?.length > 0 &&
+            aboutData?.[0]?.header}
           {/* {
             // Array.isArray(Array.isArray(aboutData) && aboutData?.length>0 && aboutData) && Array.isArray(aboutData) && aboutData?.length>0 && aboutData?.length>0 && Array.isArray(aboutData) && aboutData?.length>0 && aboutData?.[0]?.header
           } */}
@@ -133,27 +141,48 @@ function About() {
         </div>
         <div className="hero__textabout">
           <h1>
-            {Array.isArray(aboutData) && aboutData?.length>0 && aboutData[0]?.Desc}
+            {Array.isArray(aboutData) &&
+              aboutData?.length > 0 &&
+              aboutData[0]?.Desc}
             {/* Creating a world where <line>people</line> and{" "}
             <line>environments</line> are in <line>everlasting harmony.</line> */}
           </h1>
         </div>
-        <LazyLoadImage src={Array.isArray(aboutData) && aboutData?.length>0 && aboutData[0]?.Image} alt="heroimage" id="heroimg" />
+        <LazyLoadImage
+          src={
+            Array.isArray(aboutData) &&
+            aboutData?.length > 0 &&
+            aboutData[0]?.Image
+          }
+          alt="heroimage"
+          id="heroimg"
+        />
       </div>
       {/* <div id="aboutbtns">
         <button className="testbutton">THE CHALLENGE</button>
       </div> */}
 
       <div id="challenge">
-        <LazyLoadImage src={Array.isArray(aboutData) && aboutData?.length>0 && aboutData[1]?.Image} alt="roundbuilding" id="sunnyimg" />
+        <LazyLoadImage
+          src={
+            Array.isArray(aboutData) &&
+            aboutData?.length > 0 &&
+            aboutData[1]?.Image
+          }
+          alt="roundbuilding"
+          id="sunnyimg"
+        />
         <div className="toptext">
-         
-          {Array.isArray(aboutData) && aboutData?.length>0 && aboutData[1]?.header}
+          {Array.isArray(aboutData) &&
+            aboutData?.length > 0 &&
+            aboutData[1]?.header}
           <LazyLoadImage src={line} alt="linedecor" />
         </div>
         <div id="challengecontent">
-          <p style={{marginBotton:"40px"}}>
-            {Array.isArray(aboutData) && aboutData?.length>0 && aboutData[1]?.Desc}
+          <p style={{ marginBotton: "40px" }}>
+            {Array.isArray(aboutData) &&
+              aboutData?.length > 0 &&
+              aboutData[1]?.Desc}
             {/* The world needs to bridge the gap <br></br> of sustainable
             infrastructure development<br></br>without compromising comfort,
             growth<br></br> and budget. */}
@@ -166,13 +195,16 @@ function About() {
         </div>
         <div className="solutionmob">
           <div className="toptext">
-            {Array.isArray(aboutData) && aboutData?.length>0 && aboutData[2]?.header}
+            {Array.isArray(aboutData) &&
+              aboutData?.length > 0 &&
+              aboutData[2]?.header}
             <LazyLoadImage src={linewhite} alt="linedecor" />
           </div>
           <div className="solutiontextmob">
             <p>
-              {Array.isArray(aboutData) && aboutData?.length>0 && aboutData[2]?.Desc}
-             
+              {Array.isArray(aboutData) &&
+                aboutData?.length > 0 &&
+                aboutData[2]?.Desc}
             </p>
           </div>
         </div>
@@ -182,7 +214,11 @@ function About() {
       <div id="mission">
         <div id="missioncontent">
           <div id="missionmotto">
-            <h3>{Array.isArray(aboutData) && aboutData?.length>0 && aboutData[3]?.header}</h3>
+            <h3>
+              {Array.isArray(aboutData) &&
+                aboutData?.length > 0 &&
+                aboutData[3]?.header}
+            </h3>
           </div>
           <LazyLoadImage src={linewhitevert} alt="linespace" id="vertwhite" />
           <LazyLoadImage src={linewhite} alt="" id="linemobwhite" />
@@ -193,7 +229,9 @@ function About() {
               <LazyLoadImage src={linewhite} alt="linedecor" />
             </div>
             <p>
-             {Array.isArray(aboutData) && aboutData?.length>0 && aboutData[3]?.Desc}
+              {Array.isArray(aboutData) &&
+                aboutData?.length > 0 &&
+                aboutData[3]?.Desc}
             </p>
           </div>
         </div>
@@ -203,19 +241,26 @@ function About() {
           Our Process
           <LazyLoadImage src={line} alt="" />
         </div>
-        <div
-          id="processcontent"
-          data-aos="fade-up" data-aos-duration="3000"
-        >
-          <h2>{Array.isArray(aboutData) && aboutData?.length>0 && aboutData[4]?.header} </h2>
+        <div id="processcontent" data-aos="fade-up" data-aos-duration="3000">
+          <h2>
+            {Array.isArray(aboutData) &&
+              aboutData?.length > 0 &&
+              aboutData[4]?.header}{" "}
+          </h2>
           <div className="flipped">
             <LazyLoadImage
-              src={Array.isArray(aboutData) && aboutData?.length>0 && aboutData[4]?.Image}
+              src={
+                Array.isArray(aboutData) &&
+                aboutData?.length > 0 &&
+                aboutData[4]?.Image
+              }
               alt="processmain"
               id="processmainimg"
             />
             <p>
-              {Array.isArray(aboutData) && aboutData?.length>0 && aboutData[4]?.Desc}
+              {Array.isArray(aboutData) &&
+                aboutData?.length > 0 &&
+                aboutData[4]?.Desc}
               {/* At klimArt, our dynamic and multidisciplinary team collaborates on
               a cutting-edge platform to deliver exceptional architectural
               designs. Our diverse expertise and integrated approach drive
@@ -223,9 +268,15 @@ function About() {
             </p>
           </div>
           <img src={line} alt="linedecor" className="linetop" />
-          <h3 id="processubhead">{Array.isArray(aboutData) && aboutData?.length>0 && aboutData[5]?.header}</h3>
+          <h3 id="processubhead">
+            {Array.isArray(aboutData) &&
+              aboutData?.length > 0 &&
+              aboutData[5]?.header}
+          </h3>
           <p>
-            {Array.isArray(aboutData) && aboutData?.length>0 && aboutData[5]?.Desc}
+            {Array.isArray(aboutData) &&
+              aboutData?.length > 0 &&
+              aboutData[5]?.Desc}
             {/* With 20+ years of industry experience in the realm of architecture,
             design, construction and sustainability, we deliver unparalleled
             high quality results. With experience in project management,
@@ -239,7 +290,15 @@ function About() {
             data-aos-duration="2000"
             data-aos-easing="ease-in-sine"
           >
-            <img src={Array.isArray(aboutData) && aboutData?.length>0 && aboutData[6]?.Image} id="processsub1" alt="process" />
+            <img
+              src={
+                Array.isArray(aboutData) &&
+                aboutData?.length > 0 &&
+                aboutData[6]?.Image
+              }
+              id="processsub1"
+              alt="process"
+            />
           </div>
           <div
             id="processsubcon1"
@@ -248,9 +307,15 @@ function About() {
             data-aos-easing="ease-in-sine"
           >
             <img src={line} alt="linedecor" className="linetop" />
-            <h3 id="processubhead1">{Array.isArray(aboutData) && aboutData?.length>0 && aboutData[6]?.header}</h3>
+            <h3 id="processubhead1">
+              {Array.isArray(aboutData) &&
+                aboutData?.length > 0 &&
+                aboutData[6]?.header}
+            </h3>
             <p>
-              {Array.isArray(aboutData) && aboutData?.length>0 && aboutData[6]?.Desc}
+              {Array.isArray(aboutData) &&
+                aboutData?.length > 0 &&
+                aboutData[6]?.Desc}
               {/* We believe that the beauty is in the details, and no matter how
               small or big the project is, we make sure no detail escapes our
               attention. We strive for perfection for every scale of design. */}
@@ -268,9 +333,15 @@ function About() {
               data-aos-easing="ease-in-sine"
             >
               <img src={line} alt="linedecor" className="linetop" />
-              <h3 id="processubhead2">{Array.isArray(aboutData) && aboutData?.length>0 && aboutData[7]?.header}</h3>
+              <h3 id="processubhead2">
+                {Array.isArray(aboutData) &&
+                  aboutData?.length > 0 &&
+                  aboutData[7]?.header}
+              </h3>
               <p>
-                {Array.isArray(aboutData) && aboutData?.length>0 && aboutData[7]?.Desc}
+                {Array.isArray(aboutData) &&
+                  aboutData?.length > 0 &&
+                  aboutData[7]?.Desc}
                 {/* We have a team of multidisciplinary architects, designers and
                 industry professionals collaborating at all levels to create
                 truly outstanding spaces. */}
@@ -282,22 +353,45 @@ function About() {
             data-aos-duration="2000"
             data-aos-easing="ease-in-sine"
           >
-            <img src={Array.isArray(aboutData) && aboutData?.length>0 && aboutData[7]?.Image} id="processsub2" />
+            <img
+              src={
+                Array.isArray(aboutData) &&
+                aboutData?.length > 0 &&
+                aboutData[7]?.Image
+              }
+              id="processsub2"
+            />
           </div>
         </div>
       </div>
 
       <div data-aos="fade-up" data-aos-duration="3000">
-        <LazyLoadImage src={Array.isArray(aboutData) && aboutData?.length>0 && aboutData[8]?.Image} alt="" id="processafter" />
+        <LazyLoadImage
+          src={
+            Array.isArray(aboutData) &&
+            aboutData?.length > 0 &&
+            aboutData[8]?.Image
+          }
+          alt=""
+          id="processafter"
+        />
       </div>
       <div id="values">
         <LazyLoadImage
-          src={Array.isArray(aboutData) && aboutData?.length>0 && aboutData[9]?.Image}
+          src={
+            Array.isArray(aboutData) &&
+            aboutData?.length > 0 &&
+            aboutData[9]?.Image
+          }
           alt=""
           className="valuesheadermob"
         />
         <div id="valuesheader">
-          <h2>{Array.isArray(aboutData) && aboutData?.length>0 && aboutData[9]?.header}</h2>
+          <h2>
+            {Array.isArray(aboutData) &&
+              aboutData?.length > 0 &&
+              aboutData[9]?.header}
+          </h2>
         </div>
         <div id="valuescontent">
           <div className="toptext" id="valuestoptext">
@@ -305,19 +399,17 @@ function About() {
             <LazyLoadImage src={line} alt="" />
           </div>
           <div className="values row ">
-           {Array.isArray(valueProvidedData) && valueProvidedData.length>0 && valueProvidedData.map((data)=>{
-            return (
-              <div className="valuecol col span-1-of-3">
-              <LazyLoadImage src={data?.Image} alt="valueicon" />
-              <p className="valuetitle">
-               {data?.header}
-              </p>
-              <p className="valuecontent">
-                {data?.Desc}
-              </p>
-            </div>
-            )
-           })}
+            {Array.isArray(valueProvidedData) &&
+              valueProvidedData.length > 0 &&
+              valueProvidedData.map((data) => {
+                return (
+                  <div className="valuecol col span-1-of-3">
+                    <LazyLoadImage src={data?.Image} alt="valueicon" />
+                    <p className="valuetitle">{data?.header}</p>
+                    <p className="valuecontent">{data?.Desc}</p>
+                  </div>
+                );
+              })}
             {/* <div className="valuecol col span-1-of-3">
               <LazyLoadImage src={value2} alt="valueicon" />
               <p className="valuetitle">
@@ -364,9 +456,11 @@ function About() {
               <p className="artbutton">A</p>
               {isHoveringA && (
                 <div className="artcontent">
-                  <p className="artcontitle">{KlimartData && KlimartData[0]?.header}</p>
+                  <p className="artcontitle">
+                    {KlimartData && KlimartData[0]?.header}
+                  </p>
                   <p className="artcontext">
-                   {KlimartData && KlimartData[0]?.Desc}
+                    {KlimartData && KlimartData[0]?.Desc}
                   </p>
                 </div>
               )}
@@ -381,9 +475,11 @@ function About() {
               <p className="artbutton">R</p>
               {isHoveringR && (
                 <div className="artcontent">
-                  <p className="artcontitle">{KlimartData && KlimartData[1]?.header}</p>
+                  <p className="artcontitle">
+                    {KlimartData && KlimartData[1]?.header}
+                  </p>
                   <p className="artcontext">
-                  {KlimartData && KlimartData[1]?.Desc}
+                    {KlimartData && KlimartData[1]?.Desc}
                   </p>
                 </div>
               )}
@@ -398,7 +494,9 @@ function About() {
               <p className="artbutton">T</p>
               {isHoveringT && (
                 <div className="artcontent">
-                  <p className="artcontitle">{KlimartData && KlimartData[2]?.header}</p>
+                  <p className="artcontitle">
+                    {KlimartData && KlimartData[2]?.header}
+                  </p>
                   <p className="artcontext">
                     {KlimartData && KlimartData[2].Desc}
                   </p>
@@ -475,16 +573,19 @@ function About() {
         </div>
         <div id="peopledrive">
           <h3>
-          {Array.isArray(aboutData) && aboutData?.length>0 && aboutData[10]?.header}
+            {Array.isArray(aboutData) &&
+              aboutData?.length > 0 &&
+              aboutData[10]?.header}
             <LazyLoadImage src={line} alt="" id="peopleline" />
-          
           </h3>
 
           <div>
             <div className="slogan_heading">
               <h2>
                 <FaQuoteLeft />
-                {Array.isArray(aboutData) && aboutData?.length>0 && aboutData[10]?.Desc}
+                {Array.isArray(aboutData) &&
+                  aboutData?.length > 0 &&
+                  aboutData[10]?.Desc}
               </h2>
               <div className="seperatorline">
                 <p>Dr Sujit Kumar</p>
@@ -493,7 +594,14 @@ function About() {
 
             {/* <LazyLoadImage src={aboutquote} alt="quote" id="aboutquote" /> */}
           </div>
-          <div id="peoplecontainer" style={{display:"flex", flexWrap:"wrap", justifyContent:"center"}}>
+          <div
+            id="peoplecontainer"
+            style={{
+              display: "flex",
+              flexWrap: "wrap",
+              justifyContent: "center",
+            }}
+          >
             <div id="profilecard">
               <div id="name">Dr Sujit Kumar</div>
               <div id="designation">Founder/Principal Architect</div>
@@ -516,33 +624,61 @@ function About() {
             </div>
             <div id="aboutcontent">
               <p>
-              {Array.isArray(aboutData) && aboutData?.length>0 && aboutData[11]?.Desc}
+                {Array.isArray(aboutData) &&
+                  aboutData?.length > 0 &&
+                  aboutData[11]?.Desc}
               </p>
             </div>
           </div>
         </div>
       </div>
 
-      <div id="team" data-aos="fade-up" data-aos-duration="2000" style={{display:"flex", flexDirection:"column"}}>
+      <div
+        id="team"
+        data-aos="fade-up"
+        data-aos-duration="2000"
+        style={{ display: "flex", flexDirection: "column" }}
+      >
         <div id="theteam">
           <h3>The Team</h3>
           <img src={line} alt="" id="teamline" />
         </div>
-        <div style={{display:"flex",justifyContent:"center", width:"100%"}}>
-<div className="theTeamcontainer"  style={{    display: "flex",
-    flexWrap: "wrap",
-    gap: "10px",
-    width: "66%"}}>
-{
-  Array.isArray(team) && team?.length > 0 && team.map(item =>{
-    return <span style={{width:'10rem',height:'10rem', marginTop: "60px"}} className="">
-    <img style={{width:'10rem',height:'10rem'}} src={item?.propertyGallery[0]} alt="no image" />
-    <p style={{whiteSpace:"nowrap",textAlign:"center"}}>{item?.Name}</p>
-  </span>
-  })
-}
+        <div
+          style={{ display: "flex", justifyContent: "center", width: "100%" }}
+        >
+          <div
+            className="theTeamcontainer"
+            style={{
+              display: "flex",
+              flexWrap: "wrap",
 
-</div>
+              width: "66%",
+            }}
+          >
+            {Array.isArray(team) &&
+              team?.length > 0 &&
+              team.map((item) => {
+                return (
+                  <span
+                    style={{
+                      width: "10rem",
+                      height: "10rem",
+                      marginTop: "60px",
+                    }}
+                    className=""
+                  >
+                    <img
+                      style={{ width: "10rem", height: "10rem" }}
+                      src={item?.propertyGallery[0]}
+                      alt="no image"
+                    />
+                    <p style={{ whiteSpace: "nowrap", textAlign: "center" }}>
+                      {item?.Name}
+                    </p>
+                  </span>
+                );
+              })}
+          </div>
           {/* <div className="teamcol col span-1-of-5">
             <img src={team1} alt="" />
             <p>Shankari Narayanan</p>

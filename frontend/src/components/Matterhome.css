@@ -1082,7 +1082,7 @@
   .temp_image_mob {
     display: inline-block;
     width: 90vw;
-    height: 70vh;
+    /* height: 70vh; */
     overflow: hidden;
   }
   .heading_h2 {

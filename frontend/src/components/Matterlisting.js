@@ -12,6 +12,7 @@ import "./matterlisting.css";
 import { AiOutlineSearch, AiOutlineClose } from "react-icons/ai";
 import crossbtn from "../assets/crossbtn.png";
 import matterlib0 from "../assets/fullmatterlib0.png";
+import allImage from "../assets/all.jpg";
 import matterlib1 from "../assets/fullmatterlib1.png";
 import matterlib2 from "../assets/fullmatterlib2.png";
 import matterlib3 from "../assets/fullmatterlib3.png";
@@ -94,48 +95,52 @@ const matterlistingtabs = [
     title: "Sustainability",
     img: matterlib1,
     color: "#94AD1E",
-    content: `KlimArt was built on the principle that buildings are not just
-    built on site, but they grow from the site, in harmony with the
-    resources that belong there.`,
-  },
-  {
-    title: "Design Processes",
-    img: matterlib2,
-    color: "#44513D",
-    content: `KlimArt was built on the principle that buildings are not just
-    built on site, but they grow from the site, in harmony with the
-    resources that belong there.`,
+    content: `Discover eco-conscious design innovations in our
+    Sustainability blogs where we shape a greener
+    future through our mindful practices.`,
   },
   {
     title: "Materials & Techniques",
     img: matterlib3,
+    color: "#44513D",
+    content: `Explore our Design Processes blogs for insights
+    into our creative journey and innovative design
+    strategies.`,
+  },
+  {
+    title: "People and Events",
+    img: matterlib4,
     color: "#FFC000",
-    content: `KlimArt was built on the principle that buildings are not just
-    built on site, but they grow from the site, in harmony with the
-    resources that belong there.`,
+    content: `Explore cutting-edge AEC materials and
+    techniques in our blogs. Stay ahead with the latest
+    innovations.`,
   },
   {
-    title: "People and Events",
-    img: matterlib4,
+    title: "Design Processes",
+    img: matterlib2,
     color: "#8B7150",
-    content: `KlimArt was built on the principle that buildings are not just
-    built on site, but they grow from the site, in harmony with the
-    resources that belong there.`,
+    content: `Discover our team's on-the-ground impact and
+    community celebrations in People & Events blogs.
+    Join the journey!`,
   },
   {
-    title: "People and Events",
+    title: "Design Processes",
     img: matterlib4,
     color: "#8B7150",
-    content: `KlimArt was built on the principle that buildings are not just
-    built on site, but they grow from the site, in harmony with the
-    resources that belong there.`,
+    content: `Discover our team's on-the-ground impact and
+    community celebrations in People & Events blogs.
+    Join the journey!`,
   },
 ];
 
 function Matterlisting() {
   const { state } = useLocation();
-  const {mainTagId} = useParams()
+  const { mainTagId } = useParams();
   console.log("this is matter listing state", state);
+
+  // =--------------------------------------------useState------------------------------------
+
+  const [isAllselected, setIsAllselected] = useState(false);
   const [selectedTab, setSelectedTab] = useState(
     state && state.index ? state.index : 0
   );
@@ -155,10 +160,10 @@ function Matterlisting() {
     setSelectedTab(tab);
     setCategory(title);
   };
-  console.log("hi")
+  console.log("hi");
 
   const filterBlogsByCategory = () => {
-    console.log("hello")
+    console.log("hello");
     dispatch(filterBlogByCategory(category));
   };
 
@@ -214,11 +219,12 @@ function Matterlisting() {
   useEffect(() => {
     if (mainTags?.length > 0) {
       console.log("inside main tag");
-      dispatch(fetchSingleBlogs(mainTagId));
+      mainTagId === "all"
+        ? dispatch(fetchBlogs())
+        : dispatch(fetchSingleBlogs(mainTagId));
     }
     // dispatch(fetchBlogs());
-  }, [mainTags,mainTagId]);
-
+  }, [mainTags, mainTagId]);
 
   useEffect(() => {
     if (Array.isArray(singleBlogData) && singleBlogData?.length > 0) {
@@ -245,27 +251,49 @@ function Matterlisting() {
         <div className="matterlisting-hero">
           <img
             className="matterlistingbg"
-            src={matterlistingtabs[selectedTab]?.img}
+            src={
+              mainTagId === "all"
+                ? allImage
+                : matterlistingtabs[selectedTab]?.img
+            }
             alt="bg"
           />
           <div className="gradientbg"></div>
           <div className="heronav">
             {"HOME > MATTER LISTING > "}
 
-            <strong>{mainTags[selectedTab]?.title}</strong>
+            <strong>
+              {mainTagId === "all" ? "All" : mainTags[selectedTab]?.title}
+            </strong>
           </div>
           <div className="matterlisting-hero-content">
             <div className="matterlisting-hero-head">
-              {mainTags[selectedTab]?.title}
+              {mainTagId === "all" ? "" : matterlistingtabs[selectedTab]?.title}
             </div>
             <div className="matterlisting-hero-text">
-              {mainTags[selectedTab]?.description}
+              {mainTagId === "all"
+                ? ""
+                : matterlistingtabs[selectedTab]?.content}
             </div>
           </div>
           <div className="matterlisting-tabs">
+            <Link
+              to={`/Matterlisting/all`}
+              // key={idx}
+              onClick={() => {
+                setIsAllselected(true);
+                dispatch(fetchBlogs());
+              }}
+              className="matterlisting-tab"
+              style={{
+                backgroundColor: mainTagId === "all" ? "green" : "",
+              }}
+            >
+              All
+            </Link>
             {mainTags?.map((tab, idx) => (
               <Link
-              to={`/Matterlisting/${tab?._id}`}
+                to={`/Matterlisting/${tab?._id}`}
                 key={idx}
                 onClick={() => {
                   console.log("tab", tab);
