@@ -12,6 +12,7 @@ import "./matterlisting.css";
 import { AiOutlineSearch, AiOutlineClose } from "react-icons/ai";
 import crossbtn from "../assets/crossbtn.png";
 import matterlib0 from "../assets/fullmatterlib0.png";
+import allImage from "../assets/all.jpg"
 import matterlib1 from "../assets/fullmatterlib1.png";
 import matterlib2 from "../assets/fullmatterlib2.png";
 import matterlib3 from "../assets/fullmatterlib3.png";
@@ -133,9 +134,16 @@ const matterlistingtabs = [
 ];
 
 function Matterlisting() {
+
   const { state } = useLocation();
-  const {mainTagId} = useParams()
+  const { mainTagId } = useParams();
   console.log("this is matter listing state", state);
+
+
+  // =--------------------------------------------useState------------------------------------
+
+
+const [isAllselected, setIsAllselected]= useState(false);
   const [selectedTab, setSelectedTab] = useState(
     state && state.index ? state.index : 0
   );
@@ -155,10 +163,10 @@ function Matterlisting() {
     setSelectedTab(tab);
     setCategory(title);
   };
-  console.log("hi")
+  console.log("hi");
 
   const filterBlogsByCategory = () => {
-    console.log("hello")
+    console.log("hello");
     dispatch(filterBlogByCategory(category));
   };
 
@@ -214,11 +222,12 @@ function Matterlisting() {
   useEffect(() => {
     if (mainTags?.length > 0) {
       console.log("inside main tag");
-      dispatch(fetchSingleBlogs(mainTagId));
+      mainTagId === "all"
+        ? dispatch(fetchBlogs())
+        : dispatch(fetchSingleBlogs(mainTagId));
     }
     // dispatch(fetchBlogs());
-  }, [mainTags,mainTagId]);
-
+  }, [mainTags, mainTagId]);
 
   useEffect(() => {
     if (Array.isArray(singleBlogData) && singleBlogData?.length > 0) {
@@ -245,27 +254,41 @@ function Matterlisting() {
         <div className="matterlisting-hero">
           <img
             className="matterlistingbg"
-            src={matterlistingtabs[selectedTab]?.img}
+            src={mainTagId==="all"? allImage: matterlistingtabs[selectedTab]?.img}
             alt="bg"
           />
           <div className="gradientbg"></div>
           <div className="heronav">
             {"HOME > MATTER LISTING > "}
 
-            <strong>{mainTags[selectedTab]?.title}</strong>
+            <strong>{mainTagId==="all"?"All":mainTags[selectedTab]?.title}</strong>
           </div>
           <div className="matterlisting-hero-content">
             <div className="matterlisting-hero-head">
-              {matterlistingtabs[selectedTab]?.title}
+              {mainTagId==="all"?"":matterlistingtabs[selectedTab]?.title}
             </div>
             <div className="matterlisting-hero-text">
-              {matterlistingtabs[selectedTab]?.content}
+              {mainTagId==="all"?"":matterlistingtabs[selectedTab]?.content}
             </div>
           </div>
           <div className="matterlisting-tabs">
+            <Link
+              to={`/Matterlisting/all`}
+              // key={idx}
+              onClick={() => {
+                setIsAllselected(true)
+                dispatch(fetchBlogs());
+              }}
+              className="matterlisting-tab"
+              style={{
+                backgroundColor: mainTagId === "all" ? "green" : "",
+              }}
+            >
+              All
+            </Link>
             {mainTags?.map((tab, idx) => (
               <Link
-              to={`/Matterlisting/${tab?._id}`}
+                to={`/Matterlisting/${tab?._id}`}
                 key={idx}
                 onClick={() => {
                   console.log("tab", tab);
