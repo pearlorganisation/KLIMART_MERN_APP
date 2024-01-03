@@ -1275,7 +1275,7 @@ h2 {
   overflow: hidden;
   /* aspect-ratio: 1.8 / 1; */
   
-  height: 120px;
+  height: 200px;
 }
 .cardtop img {
   width: 100%;
@@ -1285,12 +1285,12 @@ h2 {
 .cardbottom {
   flex-grow: 1;
   margin-top: 2rem;
-  padding-left: 5rem;
+  padding-left: 15px;
   padding-right: 2rem;
   line-height: 1.8rem;
   height: 200px;
   
-  /* width: 100%; */
+  width: 90%;
 }
 .cardbottom .cardtitle {
   font-weight: 500;
