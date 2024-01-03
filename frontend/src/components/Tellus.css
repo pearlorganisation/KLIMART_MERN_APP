@@ -1,0 +1,135 @@
+#tellus {
+  margin-top: 0;
+  /* height: 31.25rem; */
+  width: 90%;
+  background-repeat: no-repeat;
+  padding-left: 10%;
+  background-color: transparent;
+  margin-bottom: 4rem;
+}
+
+#tellus h2 {
+  height: 11rem;
+  width: 31.25rem;
+  /* font-size: 300%; */
+  font-size: 250%;
+  float: left;
+  margin: 0;
+  padding-left: 24px;
+  padding: 0;
+  text-align: left;
+  letter-spacing: 6px;
+  margin-top: 129px;
+}
+
+#workbtn button {
+  color: #fff;
+  background-color: #e82127;
+  font-size: 87.5%;
+  font-weight: 600;
+  border: none;
+  border-top: none;
+  border-left: none;
+  text-transform: uppercase;
+  padding: 5px;
+  height: 4rem;
+  width: 16.25rem;
+  text-align: center;
+  margin-top: 2rem;
+  letter-spacing: 2px;
+  background: #e82127 50%;
+  transition: all 0.2s ease-out;
+}
+#workbtn button:hover {
+  background-color: white;
+  color: #e82127;
+  border: #e82127 solid 2px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+#workbtn button tag {
+  font-size: 22px;
+  background-color: inherit;
+  color: inherit;
+  font-weight: 300;
+}
+
+/* #workbtn button tag {
+  font-size: 22px;
+  background-color: inherit;
+  color: inherit;
+  font-weight: 300;
+} */
+
+#chairs {
+  float: right;
+  height: 560px;
+  width: 732px;
+}
+
+@media only screen and (max-width: 767px) {
+  #tellus {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: auto;
+  }
+  #chairs {
+    float: none;
+    width: 100%;
+    height: auto;
+  }
+  #tellus h2 {
+    float: none;
+    margin: 40px auto;
+    text-align: center;
+  }
+  #workbtn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center   ;
+  }
+  #workbtn button {
+    width: 260px;
+    height: 64px;
+    /* margin: 0 15%; */
+    font-size: 14px;
+  }
+}
+
+/* For Extra Large Screen */
+@media screen and (min-width: 1920px) {
+  #tellus h2 {
+    height: auto;
+  }
+  .projectdetailstext p{
+    /* font-size: 100%; */
+    line-height: 50px;
+    /* letter-spacing: 1px; */
+  }
+  #workbtn {
+    width: 50%;
+    display: flex;
+    display: inline-flex;
+  }
+/* fgksjd */
+  #mat h3 {
+    font-size: 2rem;
+    line-height: 49px;
+    width: 300px;
+    height: 150px;
+  }
+
+  #chairs {
+    float: right;
+    height: 36vw;
+    width: 40vw;
+    object-fit: cover;
+}
+
+  .matterblogsbtn {
+    height: 75px;
+  }
+}

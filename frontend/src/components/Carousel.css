@@ -1,0 +1,207 @@
+@keyframes zoomin {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
+.carousel-main {
+  position: relative;
+  /* height: 500px; */
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+  transform: translateX(0);
+  transition: transform 0.5s ease-in-out;
+}
+.carousel-main * {
+  background-color: transparent;
+  color: white;
+}
+.hero-container * {
+  background-color: transparent;
+}
+
+.cslide {
+  height: 100%;
+  width: 100%;
+  transition: transform 0.5s ease-in-out;
+  overflow: hidden;
+}
+
+.cslide > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 5s ease-in-out;
+}
+.caro{
+  height: 100vh;
+}
+
+.carousel-main button {
+  display: none;
+}
+
+.carousel-main .selected img {
+  animation: zoomin 5s linear alternate infinite;
+}
+.carousel-main.paused img {
+  animation-play-state: paused;
+}
+.carousel-main .slide {
+  border: none;
+}
+
+.carousel-main .carousel-status {
+  display: none;
+}
+.carousel-main .control-dots {
+  /* display: none; */
+  z-index: 999;
+  margin-bottom: 3rem;
+  width: 80.2% !important;
+  padding: 0 !important;
+}
+.carousel .control-dots > .dot {
+  background-color: white !important;
+}
+/* .carousel .slide img{
+  height: 400px;
+  
+} */
+.sliderImage{
+  height:400px !important;
+}
+.carouselbutton {
+  position: absolute;
+  color: white;
+  right: 8rem;
+  bottom: 3rem;
+  background-color: transparent;
+}
+.carouselbutton img {
+  background-color: transparent;
+}
+.carousel-main .carousel .thumbs-wrapper {
+  display: none;
+}
+
+.hero-container {
+  position: absolute;
+  /* inset: 0; */
+  top: 20px;
+  right: 0px;
+  left: 0px;
+  background-color: transparent;
+  padding-top: 8rem;
+  padding-left: 10.2%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.hero-container .heronav {
+  margin-top: 2rem;
+  margin: 0 1rem;
+  color: inherit;
+  background-color: transparent;
+}
+.hero-container > h1 {
+  /* flex-grow: 1; */
+  background-color: transparent;
+  color: white;
+  font-size: 3rem;
+  letter-spacing: 7px;
+  margin: 0 1rem;
+}
+.container-gradient {
+  background-image: linear-gradient(
+      180deg,
+      #000 -40%,
+      transparent 50%,
+      #000 120%
+    ),
+    linear-gradient(180deg, transparent 423px 0);
+}
+.carousel .control-dots{
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+}
+.cslide {
+  position: relative;
+}
+.slide-container {
+  position: absolute;
+  inset: 0;
+  background-color: transparent;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  text-align: start;
+  padding: 0 10.4%;
+}
+.slide-content {
+  width: 100%;
+}
+.slide-content > p {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+.slide-content-head {
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 7px;
+  margin: 0.4rem 0;
+  padding-bottom: 4.6rem;
+}
+
+@media only screen and (max-width: 1100px) {
+  * {
+    font-size: 12px;
+  }
+  #getintouch button{
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  
+  #getintouch button{
+    font-size: 10px;
+  }
+  .carousel .slide img{
+    height:400px;
+  
+  }
+  .carousel.carousel-slider{
+    height: 400px;
+  }
+ 
+}
+
+@media only screen and (max-width: 768px) {
+  * {
+    font-size: 10px;
+  }
+}
+@media (max-width:615px) {
+  .carousel .slide img{
+    width: 100%;
+    height: auto;
+  }
+  .sliderImage{
+    width: 100%;
+    height:auto;
+  }
+}
+
+
+/* code by gaurav starts here */
+@media (max-width:1440px) {
+  .carousel-main{
+    height:500px;
+  }
+}

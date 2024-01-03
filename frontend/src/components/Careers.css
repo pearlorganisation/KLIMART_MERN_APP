@@ -1,0 +1,358 @@
+/**************** Hero Page*************/
+#careerhero {
+  height: 31.5rem;
+}
+
+#careersheroimg {
+  width: 100%;
+  object-fit: cover;
+  margin-top: 60px;
+}
+
+#careermainimg {
+  width: 35.375rem;
+  height: auto;
+  margin-left: 5%;
+}
+.sizeLimit{
+  font-size: 10px !important;
+}
+/**************** Career Main *************/
+
+#careermain {
+  height: 40rem;
+  margin-top:20px;
+}
+
+#careermaintop {
+  font-size: 200%;
+  font-weight: 700;
+  text-transform: none;
+  letter-spacing: 5px;
+  padding: 2.625rem 0;
+  background-color: inherit;
+  padding-left: 10%;
+}
+#careermaintop span {
+  font-size: 100%;
+  font-weight: 700;
+  text-transform: none;
+  letter-spacing: 5px;
+  background-color: inherit;
+  height: 5rem;
+  width: 10%;
+  float: left;
+}
+
+#careermaintop img {
+  width: 11%;
+  margin-right: 10%;
+  padding: 15px 0;
+  height: 1px;
+  margin-left: 3.2rem;
+  padding-bottom: 4px;
+  padding-top: 1.5rem;
+  background-color: inherit;
+  height: 2px;
+  float: left;
+}
+
+#careercontent {
+  margin-top: 5%;
+}
+
+.careermaintext {
+  float: left;
+  padding-left: 10%;
+  width: 35%;
+}
+
+.careermaintext p {
+  height: 4.25rem;
+  font-weight: 300;
+  margin-top: 3.125rem;
+  float: left;
+  line-height: 150%;
+  width: 90%;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+}
+
+/**************** Career Vacancies *************/
+
+/* #vacancies {
+  height: 800px;
+} */
+.vacanciestop {
+  width: 80.2%;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+  display: flex;
+  align-items: center;
+}
+.vacanciestop span {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 5px;
+}
+
+/****************Cant find what youre looking for?*************/
+
+#cantfind {
+  height: 32rem;
+}
+
+#cantfindtop {
+  font-weight: 700;
+  text-transform: none;
+  letter-spacing: 5px;
+  padding: 2.625rem 0;
+  background-color: inherit;
+  padding-left: 10%;
+}
+.career_popup_head_wrapper>svg{
+  cursor: pointer;
+}
+
+#cantfindtop span {
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: none;
+  letter-spacing: 5px;
+  background-color: inherit;
+  height: 5rem;
+  width: 100%;
+  float: left;
+}
+
+#cantfindcontent p {
+  font-size: 1rem;
+  font-weight: 300;
+  margin-left: 10%;
+  line-height: 150%;
+  width: 40%;
+}
+
+#submitdetails {
+  margin-bottom: 8rem;
+  margin-top: 2%;
+  margin-left: 10%;
+  text-transform: uppercase;
+  text-align: center;
+  align-content: center;
+  align-items: center;
+  font-size: 0.8rem;
+  width: 22%;
+  height: 3rem;
+  padding: 1rem 2.75rem;
+  padding-bottom: 2rem;
+}
+
+.viewmorebtnline {
+  width: 100%;
+  background-color: #000;
+  box-sizing: border-box;
+  height: 1px;
+}
+.career_popup_container * {
+  font-size: 20px;
+}
+
+.career_popup_container {
+  position: fixed;
+  inset: 0;
+  /* top: 121px; */
+  /* bottom: 182px; */
+  margin-top: 109px;
+  /* right: -61px; */
+  background-color: transparent;
+  padding: 0 8rem;
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+  z-index: 999;
+  overflow: scroll;
+  /* display: flex; */
+  /* align-items: center; */
+
+}
+.career_popup_head {
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 9px;
+  /* margin-right: 37rem; */
+}
+.career_popup_container .input_form_container {
+  flex-direction: column;
+  align-items: flex-start;
+  height: auto;
+  width: 100%;
+  padding-bottom: 3rem;
+  overflow: hidden;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.career_popup_container .input_container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  line-height: 1.7rem;
+}
+.career_popup_container .inputs_wrapper {
+  grid-template-columns: 1fr 1fr;
+  margin-left: 0;
+  padding: 1rem 8rem;
+  box-sizing: border-box;
+}
+.career_popup_container .form_button {
+  margin: 0 auto;
+}
+.career_popup_head_wrapper {
+  margin: 3rem 8rem;
+  margin-top: 4rem;
+  /* margin: 1rem 5rem; */
+  /* margin-top: 6rem; */
+  display: flex;
+  justify-content: space-around;
+  width: 90%;
+  align-items: center;
+}
+
+.input_container select {
+  background-color: #f5f5f5;
+  padding: 1rem 0.4rem;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 0 10px;
+}
+
+@media only screen and (max-width: 767px) {
+  #careerhero {
+    height: auto;
+  }
+  #careersheroimg {
+    /* height: 80vh; */
+    height: 40vh;
+    object-fit: cover;
+    margin-top: 60px;
+  }
+  .vacancies {
+    margin-top: 30%;
+  }
+  #careermaintop {
+    font-size: 25px !important;
+  }
+  #selpro {
+    width: 45vw !important;
+    margin-left: 30% !important;
+    /* margin-left: unset !important; */
+    margin-top: 1% !important;
+  }
+  #careermain {
+    /* height: 100vh !important; */
+    height: 70vh !important;
+  }
+  .careermaintext {
+    width: 94% !important;
+    float: none !important;
+    /* height: 50vh; */
+    height: 30vh;
+    padding-bottom: 70px;
+  }
+  .careermaintext p {
+    float: none !important;
+    font-size: 14px;
+  }
+  #careermainimg {
+    width: 90%;
+  }
+  #cantfindtop {
+    margin-top: 10%;
+  }
+  #cantfindtop span {
+    font-size: 25px !important;
+  }
+  #cantfindcontent p {
+    margin-top: 15%;
+    font-size: 14px;
+    width: 88%;
+  }
+  #submitdetails {
+    font-size: 12px;
+    padding: 4px;
+    width: 80%;
+    height: 8vh;
+  }
+  #cantfind {
+    height: 60vh;
+  }
+
+  /* 25.05.23 */
+  .vacancy_card_content .contenthead {
+    font-size: 13px !important;
+  }
+  .vacancy_card_content .contentsubhead {
+    font-size: 10px !important;
+  }
+
+  .career_home {
+    overflow: hidden;
+  }
+}
+@media (max-width: 575px) {
+  .career_popup_container .input_container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .input_container .input_label {
+    margin: 0px;
+  }
+  .career_popup_container {
+    padding: 0px;
+    margin-top: 40px;
+  }
+  .career_popup_container form {
+    width: 80%;
+  }
+  .input_container input {
+    width: 100%;
+    margin-top: 5px;
+  }
+  .career_popup_head {
+    margin-right: 0px;
+    letter-spacing: 4px;
+  }
+  
+.career_popup_head_wrapper{
+  width: 77%;
+}
+
+  /* .career_popup_head_wrapper svg {
+    position: absolute;
+    right: 80px;
+  } */
+}
+/* 
+@media (max-width: 540px) {
+  .careermaintext {
+    padding-bottom: 140px;
+  }
+} */
+
+.reg_label_err {
+  font-size: 12.7px;
+  color: #d92612;
+  padding: 10px 0;
+}
+
+@media (max-width:765px) {
+  form{
+    padding-top:65px;
+  }
+  .sizeLimit{
+    font-size: 10px;
+  }
+}
+@media (min-width:1900px) {
+  .sizeLimit{
+    font-size: 23px !important;
+  }
+}
