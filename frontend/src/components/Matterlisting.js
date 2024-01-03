@@ -260,7 +260,7 @@ function Matterlisting() {
           />
           <div className="gradientbg"></div>
           <div className="heronav">
-            {"HOME > MATTER LISTING > "}
+            <Link to="/">HOME </Link>{">"}   MATTER LISTING {">"}
 
             <strong>
               {mainTagId === "all" ? "All" : mainTags[selectedTab]?.title}
