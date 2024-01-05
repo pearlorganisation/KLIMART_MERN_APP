@@ -79,7 +79,7 @@
   opacity: 0;
 }
 .vacancy_card:hover {
-  height: 100%;
+  height: fit-content;
   background-color: #e82127;
 }
 .vacancy_card:hover .viewmorebtn {

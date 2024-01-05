@@ -80,7 +80,7 @@ const handleClick = (e)=>{
           <div className="contentsubhead">
             {data?.experience} Years Experience <span>({data?.location}) </span>
           </div>
-          <p style={{color:"gray"}}>{data?.description}</p>
+          <p style={{color:"gray", fontSize:"0.7rem"}}>{data?.description}</p>
           <div className="contenttext"></div>
         </div>
         <div className="vacancy_card_button_wrap"  >

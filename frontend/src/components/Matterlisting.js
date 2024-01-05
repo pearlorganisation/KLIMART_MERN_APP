@@ -349,7 +349,7 @@ function Matterlisting() {
             Array.isArray(filterBlog) &&
             filterBlog.length > 0 &&
             filterBlog?.map((carddata, index) => {
-              const timestamp = carddata.date;
+              const timestamp = carddata?.date;
               // setTags(carddata.)
               const date = new Date(timestamp);
               const options = {
@@ -361,12 +361,12 @@ function Matterlisting() {
               const dateString = date.toLocaleDateString(undefined, options);
               return (
                 <Latestblogcard
-                  name={`By ${carddata.writer}`}
-                  img={carddata.propertyGallery[0]}
-                  title={carddata.topic}
+                  name={`By ${carddata?.writer}`}
+                  img={carddata?.propertyGallery[0]}
+                  title={carddata?.topic.slice(0,34)+"..."}
                   date={dateString}
-                  link={carddata.content}
-                  Id={carddata._id}
+                  link={carddata?.content}
+                  Id={carddata?._id}
                 />
               );
             })
