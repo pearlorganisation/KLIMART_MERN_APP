@@ -155,6 +155,7 @@ function Matterlisting() {
   const { getBlogData, filterBlog, mainTags, singleBlogData, isLoading } =
     useSelector((state) => state?.getBlog);
   console.log("mainTags redux", mainTags);
+ 
 
   const handleSelectTab = (tab, title) => {
     setSelectedTab(tab);
@@ -230,7 +231,9 @@ function Matterlisting() {
     if (Array.isArray(singleBlogData) && singleBlogData?.length > 0) {
       const types = singleBlogData.map((project) =>
         project?.tags[0]?.tags_name?.toString()
+      
       );
+      
       const uniqueTypes = [...new Set(types)];
       if (uniqueTypes?.length > 0) setTypesList(uniqueTypes);
     }
@@ -321,7 +324,8 @@ function Matterlisting() {
             >
               <p>All</p>
             </div>
-            {typesList?.map((tag, idx) => (
+         
+            {mainTagId!=="all" && typesList?.map((tag, idx) => (
               <div
                 onClick={() => handleSelectTag(tag)}
                 key={idx}
@@ -331,7 +335,9 @@ function Matterlisting() {
               >
                 <p>{tag}</p>
               </div>
-            ))}
+            )
+            )}
+           
           </div>
         </div>
         <div className="matterlist">
