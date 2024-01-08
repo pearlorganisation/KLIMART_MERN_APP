@@ -51,10 +51,11 @@ app.use(
         ? {
             origin: [
               "https://klimart.netlify.app/",
-            
               "https://klimart-admin-panel.netlify.app/",
               "http://127.0.0.1:5173",
               "http://localhost:5173",
+              "https://klimart-admin.netlify.app/",
+              "https://klimart.in/"
             ],
             credentials: true,
           }
