@@ -322,7 +322,7 @@ function Matterlisting() {
               }
               onClick={() => handleSelectTag("All")}
             >
-              <p>All</p>
+              <p style={{display:mainTagId=="all"?"none":"inline-block"}}>All</p>
             </div>
          
             {mainTagId!=="all" && typesList?.map((tag, idx) => (

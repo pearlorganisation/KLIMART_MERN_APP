@@ -94,3 +94,12 @@
 .vacancy_card:hover .vacancy_card_content_wrap {
   margin-top: 5rem;
 }
+
+@media (min-width:1900px) {
+  .vacancy_card {
+    height: 250px !important;
+  }
+  .vacancy_card_content{
+    height: 250px !important;
+  }
+}

@@ -158,7 +158,7 @@ function Matterhome() {
             data-aos-duration="2000"
             data-aos-easing="ease-in-sine"
           >
-            <img src={interiorimg} alt=" Chairs Image " />
+            <img src={interiorimg} alt=" Chairs Image" />
           </div>
           <div
             className="right_info_content"
