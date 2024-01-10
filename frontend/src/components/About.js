@@ -651,7 +651,7 @@ function About() {
             style={{
               display: "flex",
               flexWrap: "wrap",
-
+              gap:"25px",
               width: "66%",
             }}
           >
