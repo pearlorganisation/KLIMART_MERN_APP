@@ -118,10 +118,8 @@ console.log("getproject data", getProjectData)
 
 
 
-  const handleClick = (idx) => {
-    navigate("/Matterlisting", {
-      state: { index: idx },
-    });
+  const handleClick = (id) => {
+    navigate(`matterlisting/${id}`)
   };
 
   useEffect(() => {
@@ -320,49 +318,7 @@ console.log("getproject data", getProjectData)
               </div>
               )
             })}
-{/*             
-            <div id="sbr">
-              <div className="type">Residence</div>
-              <div className="zoomhover">
-                <LazyLoadImage src={sbr} />
-              </div>
-              <div className="projecttitle">Sunny Brookes Residence</div>
-              <div className="dateloc">2022 • BENGALURU, INDIA</div>
-            </div>
-            <div id="anunanibox">
-              <div className="type">Residence</div>
-              <div id="anunanihover">
-                <LazyLoadImage src={anunani} />
-              </div>
-              <div className="projecttitle">Anu & Nani Residence</div>
-              <div className="dateloc">2016 • BENGALURU, INDIA</div>
-            </div>
-            <div id="pgcl">
-              <div className="type">Township</div>
-              <div className="zoomhover">
-                <LazyLoadImage src={pgcl} />
-              </div>
-              <div className="projecttitle">
-                Power Grid Corporation of India Limited Headquarters
-              </div>
-              <div className="dateloc">2018 • BENGALURU, INDIA</div>
-            </div>
-            <div id="shantanu">
-              <div className="type">Interiors</div>
-              <div className="zoomhover">
-                <LazyLoadImage src={shantanu} />
-              </div>
-              <div className="projecttitle">Shaantnu Residence Interiors</div>
-              <div className="dateloc">2016 • BENGALURU, INDIA</div>
-            </div>
-            <div id="kseb">
-              <div className="type">Interiors</div>
-              <div className="zoomhover">
-                <LazyLoadImage src={kseb} />
-              </div>
-              <div className="projecttitle">KSEB Headquarters Office</div>
-              <div className="dateloc">2016 • TRIVANDRUM, INDIA</div>
-            </div> */}
+
           </div>
         </section>
   
@@ -399,210 +355,11 @@ console.log("getproject data", getProjectData)
                 })}
               </div>
           </div>
-          {/* <div className="logogrid">
-            <div className="logorow row">
-            <div className="col span-1-of-5">
-                <LazyLoadImage src={kseblogo} id="ksebl" alt="logo" />
-              </div>
-              <div className="col span-1-of-5">
-                <LazyLoadImage src={iitm} alt="logo " />
-              </div>
-              <div className="col span-1-of-5">
-                <LazyLoadImage src={psbb} alt="" />
-              </div>
-              <div className="col span-1-of-5">
-                <LazyLoadImage src={educomp} alt="" />
-              </div>
-              <div className="col span-1-of-5">
-                <LazyLoadImage src={uptour} alt="" />
-              </div>
-            </div>
-            <div className="logorow row">
-              <div className="col span-1-of-5">
-                <LazyLoadImage src={mpshasan} alt="logo" />
-              </div>
-              <div className="col span-1-of-5">
-                <LazyLoadImage src={hp} alt="logo" />
-              </div>
-              <div className="col span-1-of-5">
-                <LazyLoadImage src={epco} alt="logo" />
-              </div>
-              <div className="col span-1-of-5">
-                <LazyLoadImage src={powergrid} alt="logo" />
-              </div>
-              <div className="col span-1-of-5">
-                <LazyLoadImage src={momnme} alt="logo" />
-              </div>
-            </div>
-            <div className="logorow row">
-              <div className="col span-1-of-5">
-                <LazyLoadImage src={strides} alt="logo" />
-              </div>
-              <div className="col span-1-of-5">
-                <LazyLoadImage src={reva} alt="logo" />
-              </div>
-              <div className="col span-1-of-5">
-                <LazyLoadImage src={usha} alt="logo" />
-              </div>
-              <div className="col span-1-of-5">
-                <LazyLoadImage src={domino} alt="logo" />
-              </div>
-              <div className="col span-1-of-5">
-                <LazyLoadImage src={tagore} alt="logo" />
-              </div>
-            </div>
-          </div> */}
-  
-          {/* <div className="mobilelogos">
-            <div className="logorow row">
-              <div className="col span-1-of-3">
-              {Array.isArray(logoData?.data) && logoData?.data.length>0 && logoData?.data.map((data)=>{
-                  return (
-                    <LazyLoadImage src={data?.Image} id="ksebl" alt="logo" />
-                  )
-                })}
-                
-              </div>
-              <div className="col span-1-of-3">
-                <LazyLoadImage src={iitm} alt="logo " />
-              </div>
-              <div className="col span-1-of-3">
-                <LazyLoadImage src={psbb} alt="" />
-              </div>
-            </div>
-  
-            <div className="logorow row">
-              <div className="col span-1-of-3">
-                <LazyLoadImage src={educomp} alt="" />
-              </div>
-              <div className="col span-1-of-3">
-                <LazyLoadImage src={uptour} alt="" />
-              </div>
-              <div className="col span-1-of-3">
-                <LazyLoadImage src={mpshasan} alt="logo" />
-              </div>
-            </div>
-  
-            <div className="logorow row">
-              <div className="col span-1-of-3">
-                <LazyLoadImage src={hp} alt="logo" />
-              </div>
-              <div className="col span-1-of-3">
-                <LazyLoadImage src={epco} alt="logo" />
-              </div>
-              <div className="col span-1-of-3">
-                <LazyLoadImage src={powergrid} alt="logo" />
-              </div>
-            </div>
-  
-            <div className="logorow row">
-              <div className="col span-1-of-3">
-                <LazyLoadImage src={momnme} alt="logo" />
-              </div>
-              <div className="col span-1-of-3">
-                <LazyLoadImage src={strides} alt="logo" />
-              </div>
-              <div className="col span-1-of-3">
-                <LazyLoadImage src={reva} alt="logo" />
-              </div>
-            </div>
-  
-            <div className="logorow row">
-              <div className="col span-1-of-3">
-                <LazyLoadImage src={usha} alt="logo" />
-              </div>
-              <div className="col span-1-of-3">
-                <LazyLoadImage src={domino} alt="logo" />
-              </div>
-              <div className="col span-1-of-3">
-                <LazyLoadImage src={tagore} alt="logo" />
-              </div>
-            </div>
-          </div> */}
-          {/* <LazyLoadImage src={linered} alt="border" id="borderbtn" /> */}
+          
+          
         </section>
   
-        {/* Testimonials */}
-        {/* <section id="testimonials">
-          <div className="toptext" id="testimonialstop">
-            What our clients have to say
-            <LazyLoadImage src={line} alt="" />
-          </div>
-          <div
-            style={{ clear: "both", paddingRight: "2rem", background: "inherit" }}
-          >
-            <Carousel style={{ width: "auto" }}>
-              <div className="testimonialContent">
-                <LazyLoadImage src={quote} alt="" />
-                <div className="testmonial_text">
-                  The house designed by klimArt Architects is a beautiful and
-                  modern masterpiece.
-                </div>
-                <div className="textmonial_separating_line">
-                  <span></span>
-                  <span></span>
-                </div>
-                <div className="testimonial_name">Ankush PA Reddy</div>
-                <div className="testimonial_name_designation">
-                  Chief Executive Officer, Google
-                </div>
-              </div>
-  
-              <div className="testimonialContent">
-                <LazyLoadImage src={quote} alt="" />
-                <div className="testmonial_text">
-                  The house designed by klimArt Architects is a beautiful and
-                  modern masterpiece.
-                </div>
-                <div className="textmonial_separating_line">
-                  <span></span>
-                  <span></span>
-                </div>
-                <div className="testimonial_name">Ankush PA Reddy</div>
-                <div className="testimonial_name_designation">
-                  Chief Executive Officer, Google
-                </div>
-              </div>
-  
-              <div className="testimonialContent">
-                <LazyLoadImage src={quote} alt="" />
-                <div className="testmonial_text">
-                  The house designed by klimArt Architects is a beautiful and
-                  modern masterpiece.
-                </div>
-                <div className="textmonial_separating_line">
-                  <span></span>
-                  <span></span>
-                </div>
-                <div className="testimonial_name">Ankush PA Reddy</div>
-                <div className="testimonial_name_designation">
-                  Chief Executive Officer, Google
-                </div>
-              </div>
-  
-              <div className="testimonialContent">
-                <LazyLoadImage src={quote} alt="" />
-                <div className="testmonial_text">
-                  The house designed by klimArt Architects is a beautiful and
-                  modern masterpiece.
-                </div>
-                <div className="textmonial_separating_line">
-                  <span></span>
-                  <span></span>
-                </div>
-                <div className="testimonial_name">Ankush PA Reddy</div>
-                <div className="testimonial_name_designation">
-                  Chief Executive Officer, Google
-                </div>
-              </div>
-            </Carousel>
-          </div>
-        </section> */}
-        {/* Tell Us */}
-        {/* <Tellus PopUp={props.PopUp} />
         
-         */}
-  
         <section className="tellus" style={{marginTop:"40px"}}>
           <TellUs PopUp={setShowPopUp} data={Array.isArray(data) && data?.length>0 && data[7]} />
         </section>
@@ -625,28 +382,28 @@ console.log("getproject data", getProjectData)
             <div className="container">
               <div className="card">
                 <LazyLoadImage
-                  onClick={() => handleClick(1)}
+                  onClick={() => handleClick("6514fdbd28347ae3abbce16e")}
                   src={matter1}
                   alt="..."
                 />
               </div>
               <div className="card">
                 <LazyLoadImage
-                  onClick={() => handleClick(3)}
+                  onClick={() => handleClick("6514fded28347ae3abbce176")}
                   src={matter2}
                   alt="..."
                 />
               </div>
               <div className="card">
                 <LazyLoadImage
-                  onClick={() => handleClick(2)}
+                  onClick={() => handleClick("6514fde128347ae3abbce170")}
                   src={matter3}
                   alt="..."
                 />
               </div>
               <div className="card">
                 <LazyLoadImage
-                  onClick={() => handleClick(4)}
+                  onClick={() => handleClick("6514fdf728347ae3abbce17c")}
                   src={matter4}
                   alt="..."
                 />

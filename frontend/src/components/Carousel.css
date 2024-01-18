@@ -190,7 +190,8 @@
 @media (max-width:615px) {
   .carousel .slide img{
     width: 100%;
-    height: auto;
+    height: 400px;
+    
   }
   .sliderImage{
     width: 100%;

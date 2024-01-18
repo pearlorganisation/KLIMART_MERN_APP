@@ -255,7 +255,7 @@ function ProjectListing() {
                       key={ind}
                       onClick={() => navigate(`/projects/${data?._id}`)}
                     >
-                      <LazyLoadImage src={data?.heroImg[0]} alt="" />
+                      <LazyLoadImage src={data?.heroImg[0]} alt="" style={{cursor:"pointer"}} />
                       <div className="slide-container container-gradient">
                         <div className="slide-content">
                           <p>{data?.type?.type_name}</p>

@@ -60,24 +60,28 @@ function Matterhome() {
       img: matterlib1,
       color: "#94AD1E",
       link: "sustainability",
+      _id:"6514fdbd28347ae3abbce16e"
     },
     {
       title: "Design Processes",
       img: matterlib2,
       color: "#44513D",
       link: "designprocess",
+      _id:"6514fde128347ae3abbce170"
     },
     {
       title: "Materials & Techniques",
       img: matterlib3,
       color: "#FFC000",
       link: "materialsandtechniques",
+      _id:"6514fded28347ae3abbce176"
     },
     {
       title: "People and Events",
       img: matterlib4,
       color: "#8B7150",
       link: "peopleandevents",
+      _id:"6514fdf728347ae3abbce17c"
     },
   ];
 
@@ -117,7 +121,8 @@ function Matterhome() {
               </div>
               <div className="herobuttons">
                 {herodata.map((data, idx) => (
-                  <div
+                  <Link
+                  to={`/Matterlisting/${data?._id}`}
                     onClick={() => handleClick(idx + 1)}
                     style={{
                       color: data?.color,
@@ -131,7 +136,7 @@ function Matterhome() {
                       src={data?.img}
                       alt={data?.title}
                     />
-                  </div>
+                  </Link>
                 ))}
               </div>
             </div>
@@ -153,7 +158,7 @@ function Matterhome() {
             data-aos-duration="2000"
             data-aos-easing="ease-in-sine"
           >
-            <img src={interiorimg} alt=" Chairs Image " />
+            <img src={interiorimg} alt=" Chairs Image" />
           </div>
           <div
             className="right_info_content"
@@ -239,7 +244,7 @@ function Matterhome() {
           {/* normal row  */}
           <div className="matterlibleft">
             <Link
-              to={`/Matterlisting/${mainTags[0]?._id}`}
+              to={`/Matterlisting/${mainTags?.length>0 && mainTags[0]?._id}`}
               className="overlay_img"
               onClick={() => {
                 handleClick(0);
@@ -268,7 +273,7 @@ function Matterhome() {
                 <div>{data[4]?.Desc}</div>
                 <div className="matterexplore">
                   <Link
-                    to={`/Matterlisting/${mainTags[0]?._id}`}
+                    to={`/Matterlisting/${mainTags?.length>0 && mainTags[0]?._id}`}
                     onClick={() => {
                       handleClick(0);
                       // dispatch(fetchSingleBlogs(mainTags[0]._id));
@@ -291,7 +296,7 @@ function Matterhome() {
             >
               <img src={data[5]?.Image} alt="" />
               <Link
-                to={`/Matterlisting/${mainTags[3]?._id}`}
+                to={`/Matterlisting/${mainTags?.length>0 && mainTags[3]?._id}`}
                 style={{ backgroundColor: "#44513D" }}
                 className="overlay overlay_rev"
                 onClick={() => {
@@ -317,7 +322,7 @@ function Matterhome() {
                 <div>{data[5]?.Desc}</div>
                 <div className="matterexplore">
                   <Link
-                    to={`/Matterlisting/${mainTags[3]?._id}`}
+                    to={`/Matterlisting/${mainTags?.length>0 && mainTags[3]?._id}`}
                     onClick={() => {
                       handleClick(1);
                       // dispatch(fetchSingleBlogs(mainTags[1]._id));
@@ -335,7 +340,7 @@ function Matterhome() {
           <div className="matterlibleft">
             {/* <Link to ={`/Matterlisting/${mainTags[2]._id}`} */}
             <Link
-              to={`/Matterlisting/${mainTags[1]?._id}`}
+              to={`/Matterlisting/${mainTags?.length>0 && mainTags[1]?._id}`}
               className="overlay_img"
               onClick={() => handleClick(2)}
               data-aos="fade-up"
@@ -365,7 +370,7 @@ function Matterhome() {
                 <div>{data[6]?.Desc}</div>
                 <div className="matterexplore">
                   <Link
-                    to={`/Matterlisting/${mainTags[1]?._id}`}
+                    to={`/Matterlisting/${mainTags?.length>0 && mainTags[1]?._id}`}
                     onClick={() => handleClick(2)}
                   >
                     <span> Explore More</span>
@@ -380,7 +385,7 @@ function Matterhome() {
 
           <div className="matterlibleft rev_row">
             <Link
-              to={`/Matterlisting/${mainTags[2]?._id}`}
+              to={`/Matterlisting/${mainTags?.length>0 && mainTags[2]?._id}`}
               className="overlay_img overlay_img_rev"
               onClick={() => handleClick(3)}
               data-aos="fade-up"
@@ -409,7 +414,7 @@ function Matterhome() {
                 <div>{data[7]?.Desc}</div>
                 <div className="matterexplore">
                   <Link
-                    to={`/Matterlisting/${mainTags[2]?._id}`}
+                    to={`/Matterlisting/${mainTags?.length>0 && mainTags[2]?._id}`}
                     onClick={() => handleClick(3)}
                   >
                     <span> Explore More</span>

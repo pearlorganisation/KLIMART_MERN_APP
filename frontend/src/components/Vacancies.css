@@ -30,7 +30,7 @@
 .vacancy_card_content .contenthead {
   font-weight: bold;
   font-size: 1.2rem;
-  letter-spacing: 5px;
+  /* letter-spacing: 5px; */
   margin-top: 2rem;
 }
 .vacancy_card_content .contentsubhead {
@@ -79,7 +79,7 @@
   opacity: 0;
 }
 .vacancy_card:hover {
-  height: 100%;
+  height: fit-content;
   background-color: #e82127;
 }
 .vacancy_card:hover .viewmorebtn {
@@ -93,4 +93,13 @@
 }
 .vacancy_card:hover .vacancy_card_content_wrap {
   margin-top: 5rem;
+}
+
+@media (min-width:1900px) {
+  .vacancy_card {
+    height: 250px !important;
+  }
+  .vacancy_card_content{
+    height: 250px !important;
+  }
 }
