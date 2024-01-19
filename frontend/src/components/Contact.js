@@ -151,10 +151,7 @@ const [msgValue, setMsgValue]= useState("");
             </div>
             <Link to="/Careers">
             <div id="careersbuttonright">
-              
                 <AiOutlineArrowRight />
-               
-       
             </div>
             </Link>
           </div>
