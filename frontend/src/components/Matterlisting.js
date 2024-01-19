@@ -155,6 +155,7 @@ function Matterlisting() {
   const { getBlogData, filterBlog, mainTags, singleBlogData, isLoading } =
     useSelector((state) => state?.getBlog);
   console.log("mainTags redux", mainTags);
+ 
 
   const handleSelectTab = (tab, title) => {
     setSelectedTab(tab);
@@ -230,7 +231,9 @@ function Matterlisting() {
     if (Array.isArray(singleBlogData) && singleBlogData?.length > 0) {
       const types = singleBlogData.map((project) =>
         project?.tags[0]?.tags_name?.toString()
+      
       );
+      
       const uniqueTypes = [...new Set(types)];
       if (uniqueTypes?.length > 0) setTypesList(uniqueTypes);
     }
@@ -319,9 +322,10 @@ function Matterlisting() {
               }
               onClick={() => handleSelectTag("All")}
             >
-              <p>All</p>
+              <p style={{display:mainTagId=="all"?"none":"inline-block"}}>All</p>
             </div>
-            {typesList?.map((tag, idx) => (
+         
+            {mainTagId!=="all" && typesList?.map((tag, idx) => (
               <div
                 onClick={() => handleSelectTag(tag)}
                 key={idx}
@@ -331,7 +335,9 @@ function Matterlisting() {
               >
                 <p>{tag}</p>
               </div>
-            ))}
+            )
+            )}
+           
           </div>
         </div>
         <div className="matterlist">
@@ -349,7 +355,7 @@ function Matterlisting() {
             Array.isArray(filterBlog) &&
             filterBlog.length > 0 &&
             filterBlog?.map((carddata, index) => {
-              const timestamp = carddata.date;
+              const timestamp = carddata?.date;
               // setTags(carddata.)
               const date = new Date(timestamp);
               const options = {
@@ -361,12 +367,12 @@ function Matterlisting() {
               const dateString = date.toLocaleDateString(undefined, options);
               return (
                 <Latestblogcard
-                  name={`By ${carddata.writer}`}
-                  img={carddata.propertyGallery[0]}
-                  title={carddata.topic}
+                  name={`By ${carddata?.writer}`}
+                  img={carddata?.propertyGallery[0]}
+                  title={carddata?.topic.slice(0,34)+"..."}
                   date={dateString}
-                  link={carddata.content}
-                  Id={carddata._id}
+                  link={carddata?.content}
+                  Id={carddata?._id}
                 />
               );
             })

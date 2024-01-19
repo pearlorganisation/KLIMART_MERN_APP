@@ -1448,7 +1448,7 @@ a {
 }
 
 /* style by gaurav starts here*/
-@media (max-width: 1900px) {
+@media (min-width: 1900px) {
   .theTeamcontainer {
     gap: 25px !important;
     display: flex;
