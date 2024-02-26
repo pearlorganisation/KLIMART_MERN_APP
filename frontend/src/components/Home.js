@@ -209,12 +209,12 @@ console.log("getproject data", getProjectData)
         </section>
   
         {/* Values Delivered */}
-        <div className="homelib">
+        <div className="homelib value">
           <div className="toptext">
             Values Delivered
             <LazyLoadImage src={line} alt="" />
           </div>
-          <div className="homelibleft" id="homelibleft1">
+          <div className="homelibleft homelibleft1" id="homelibleft1">
             <div
                data-aos="fade-up"
                data-aos-offset="500"

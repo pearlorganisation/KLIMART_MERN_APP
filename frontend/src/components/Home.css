@@ -498,7 +498,8 @@ h2 {
 .homelibright img {
   float: right;
   width: 40%;
-  height: auto;
+  height: 400px;
+  object-fit: cover;
   padding-top: 5%;
 }
 
@@ -735,7 +736,7 @@ h2 {
   align-items: center;
   float: none;
   font-size: 87.5%;
-  width: 18%;
+  width: auto;
   height: 3rem;
   /* padding: 1rem 2.5rem; */
   padding-bottom: 2rem;
@@ -1482,6 +1483,31 @@ h2 {
 @media only screen and (min-width: 768px) and (max-width: 825px) {
   #clientlogos{
     height:56.875rem;
+  }
+}
+
+@media (min-width:1024px) and (max-width:1440px) {
+  .value > .homelibleft1{
+    margin-top:3.5rem
+  }
+  .homelibleft{
+    margin-top: 17.125rem;
+  }
+ 
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .homelibright img{
+    height: 300px !important;
+  }
+  .homelibleft {
+    margin-top: 8.125rem;
+  } 
+  .homelefttext h3{
+    height: auto;
+  }
+  .homerighttext h3{
+    height:auto;
   }
 }
 
