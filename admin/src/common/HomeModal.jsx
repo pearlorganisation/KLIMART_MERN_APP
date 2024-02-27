@@ -99,7 +99,7 @@ function HomeModal({homeData , onUpdateData}) {
           </div>
           <div class="modal-body">
             <form>
-           {updateData && updateData._id==="65252831918cbfd4f1956241" ? " ":
+           {updateData && updateData?._id==="65252831918cbfd4f1956241" ? " ":
            <>
               <div class="mb-3">
                 <label for="recipient-name" class="col-form-label">
@@ -115,7 +115,7 @@ function HomeModal({homeData , onUpdateData}) {
                 />
               </div>
            </>}
-           {updateData && updateData._id==="65262ae91e3553e2dfce821d" ? " ":
+           {updateData && updateData?._id==="65262ae91e3553e2dfce821d" ? " ":
              <div class="mb-3">
              <label for="message-text" class="col-form-label">
                Description
@@ -130,7 +130,7 @@ function HomeModal({homeData , onUpdateData}) {
            </div>}
             
               <div class="mb-3">
-                {updateData && updateData._id==="65252831918cbfd4f1956241" ||updateData._id=== "652e2edf2b52017bc754d105" ? " ":
+                {updateData && updateData?._id==="65252831918cbfd4f1956241" ||updateData?._id=== "652e2edf2b52017bc754d105" ? " ":
                 <>
                  <label for="recipient-name" class="col-form-label" >
                 <span style={{ marginRight: "458px" }}>Image</span>
