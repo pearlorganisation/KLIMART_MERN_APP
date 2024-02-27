@@ -76,27 +76,29 @@ function HomePageSec() {
       <strong>Home Page Section {index}</strong>
       <div class="card">
         <div class="card-body">
-        <img
+          {homeData && homeData._id==="65252831918cbfd4f1956241" ||homeData._id=== "652e2edf2b52017bc754d105" ? <p style={{color:"red"}}>No Image is needed for this section</p>: <img
           src={homeData?.Image[0]}
           class="card-img-top"
           alt="..."
           style={{ height: "350px" }}
-        />
-          <h5 class="card-title">{homeData?.header}</h5>
-          <p class="card-text">{descData ? homeData?.Desc  : homeData?.Desc?.slice(0,10)  }{"   "}
+        />}
+        {homeData && homeData._id==="65252831918cbfd4f1956241" ? <p style={{color:"red"}}>No header is needed for this section</p>:<h5 class="card-title">{homeData?.header}</h5>}
           
-         {
-          descData ? '' :  <span
-          className="readmore"
-           style={{color:'#fe5502' ,cursor:"pointer"}}
-           onClick={()=>{setDescData(!descData)}}
+          {homeData && homeData._id==="65262ae91e3553e2dfce821d" ? <p style={{color:"red"}} >No description is needed for this section</p>: <p class="card-text">{descData ? homeData?.Desc  : homeData?.Desc?.slice(0,10)  }{"   "}
           
-          >   
-          
-               Read more...
-          </span>
-         }
-          </p>
+          {
+           descData ? '' :  <span
+           className="readmore"
+            style={{color:'#fe5502' ,cursor:"pointer"}}
+            onClick={()=>{setDescData(!descData)}}
+           
+           >   
+           
+                Read more...
+           </span>
+          }
+           </p>}
+         
           <button
             type="button"
             class="btn btn-primary"
