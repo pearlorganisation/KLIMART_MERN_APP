@@ -374,10 +374,10 @@ const CareersPopUp = (props) => {
                     type="file"
                     name="cv"
                     {...register("cv", {
-                      validate: {
-                        lessThan10MB: (files) =>
-                          files[0]?.size > 10000000 || "Max 10MB",
-                      },
+                      // validate: {
+                      //   lessThan10MB: (files) =>
+                      //     files[0]?.size > 10000000 || "Max 10MB",
+                      // },
                     })}
                   />
                   <p style={{color:"red"}} className="sizeLimit">max size limit: 10Mb</p>
