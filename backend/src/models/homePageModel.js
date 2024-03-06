@@ -10,7 +10,7 @@ const HomePageSchema = new Schema(
       type: String,
       // minlength: [3, 'Name must be three characters long'],
       trim: true,
-      // unique: true,
+      unique: true,
       // required: [true, 'Title is required']
     },
     Desc: {
@@ -24,7 +24,7 @@ const HomePageSchema = new Schema(
     }
   },
   {timestamps:true}
-  // { toJSON: { virtuals: true }, toObject: { virtuals: true }, timestamps: true }
+ 
 )
 
 
