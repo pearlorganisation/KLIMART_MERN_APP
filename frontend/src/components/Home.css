@@ -1400,7 +1400,7 @@ h2 {
     margin-right: 10%;
     margin-top: 0;
     width: 38%;
-    font-size: 1.5vw;
+    font-size: 1.3vw;
     font-weight: 300;
     letter-spacing: 4px;
     line-height: 3vw;
@@ -1447,6 +1447,10 @@ h2 {
 .cardbottom .cardbutton{
   font-size: 1.3vw;
 }
+#clienttop{
+  padding-top: 6rem;
+}
+
 }
 
 @media (max-width:1440px) {
